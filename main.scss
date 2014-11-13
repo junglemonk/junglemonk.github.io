@@ -239,6 +239,7 @@ ul {
     height: 153px;
     width: 100%;
     margin-top: -4px;
+    line-height: 20px;
    
 }
 
@@ -252,13 +253,12 @@ ul {
 
 .row_three__content {
     width: 572px;
-    height: inherit;
     position: absolute;
     background: url(images/counter.png) no-repeat;
     margin-left: 160px;
     padding: 20px 0 0 260px;
+    
     span {
-        
         color: #ffffff;
         font-size: 14px;
     }
@@ -280,22 +280,31 @@ ul {
 
 .row__pic1 { 
     height: 383px;
-    background: url(images/gallaryLacoste.png) no-repeat;
     padding: 330px 0 20px 0;
-    font-size: 16.59px;
+    background: url(images/gallaryLacoste.png) no-repeat;
     
-    
+
 }
 
 
 .row__column {
     @include column(1);
+    font-size: 12px;
 }
 
 .row_four_gallary {
     width: 951px;
     height: 745px;
     margin: 40px auto;
+    line-height: 15px;
+    
+    span {
+        white-space: pre-line;
+    }
+    
+    b {
+    font-size: 14px;
+    }
 }
 
 
@@ -367,6 +376,7 @@ ul {
     position: relative;
     display: inline-block;
     font-size: 10px;
+    line-height: 20px;
     
 }
 
