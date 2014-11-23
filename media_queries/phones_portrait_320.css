@@ -1,7 +1,7 @@
 @media all (orientation:portrait), all and (max-width:320px)   {
     
     .wrap {
-        min-width: 320px;
+        min-width: none;
         display: block;
     }
 }
