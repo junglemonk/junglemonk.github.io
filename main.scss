@@ -12,6 +12,7 @@ body {
     font-family: "Press Start 2P";
     font-weight: 400;
     text-transform: uppercase;
+    font-size: 100%; /*16px*/
 }
 a { 
     text-decoration: none;
@@ -56,11 +57,10 @@ ul {
 .menu_item {
     margin-right: 15px;
     color: #332f2f;
-    font-size: 12px;
+    font-size: 0.75em; /*14px / 16px*/
 }
 
 .basket {
-//    width: 260px; /*min-width*/
     height: 84px;
     float: right;
     display:inline-block;
@@ -71,19 +71,18 @@ ul {
             margin-right: 11px;
             color: #332f2f;
             text-align: right;
-            font-size: 9px;
+            font-size: 0.5625em; /*9px / 16px*/
             padding: 21px 12px 25px 18px;
     
         span {
             color: #999999;
         }
           b {
-              font-size: 14px;
+              font-size: 1.555555555555556em; /*14px / 9px*/
           }
         pre {
             font-family: "Press Start 2P";
             margin: 0 0 10px 0;
-            
         }
 }
 
@@ -107,11 +106,15 @@ ul {
 .row_stud_butt {
     background-color: #ff4911;
     height: 31px;
-    border: 0px;
+    border: none;
     position: absolute;
     left: 315px;
     box-shadow: 0 2px #b9360d;
     padding: 9px 10px 9px 10px;
+    
+        a {
+            font-size: 0.875em; /*14px / 16px*/
+        }
 }
 
 .row_stud_make {
@@ -162,7 +165,6 @@ ul {
 
 
 .row_button_left {
-//    width: 133px;
     height: 31px;
     position: absolute;
     right: 0px;
@@ -172,6 +174,9 @@ ul {
     box-shadow: 0 2px #b9360d;
     padding: 9px 10px 9px 10px;
     
+        a {
+            font-size: 0.875em;  /*14px / 16px*/
+        }
     
 }
 /***ROW_TWO***/
@@ -198,7 +203,7 @@ ul {
     margin: -100px auto;
     
     span {
-        font-size: 11px;
+        font-size: 0.6875em; /*11px / 16px*/
     }
 }
 
@@ -260,7 +265,7 @@ ul {
     
     span {
         color: #ffffff;
-        font-size: 14px;
+        font-size: 0.875em; /*14px / 16px*/
     }
 }
 /***ROW_FOUR***/
@@ -271,11 +276,6 @@ ul {
     margin-top: -4px;
     display: inline-block;
     position: relative;
-    
-    p {
-    margin: 0;
-    font: 400 16.59px / 24.124px;
-}
 }
 
 .row__pic1 { 
@@ -289,7 +289,15 @@ ul {
 
 .row__column {
     @include column(1);
-    font-size: 12px;
+    font-size: 0.75em; /*12px / 16px*/
+    
+     span {
+        white-space: pre-line;
+    }
+    
+    b {
+        font-size: 1.166666666666667em; /*14px / 12px*/
+    }
 }
 
 .row_four_gallary {
@@ -298,13 +306,7 @@ ul {
     margin: 40px auto;
     line-height: 15px;
     
-    span {
-        white-space: pre-line;
-    }
-    
-    b {
-    font-size: 14px;
-    }
+   
 }
 
 
@@ -347,7 +349,7 @@ ul {
     a {
         text-align: center;
         color: #ffffff;
-        font-size: 14px / 31px;
+        font-size: 0.875em; /*14px / 16px*/
     }
 }
 
@@ -375,9 +377,8 @@ ul {
     background-color: #ffffff;
     position: relative;
     display: inline-block;
-    font-size: 10px;
+    font-size: 0.848125em; /*13.57px / 16px*/
     line-height: 20px;
-    
 }
 
 .footer_txt {
@@ -385,7 +386,6 @@ ul {
     float: left;
     margin: 35px 0 0 15px;
     display: inline-block;
-    
 }
 
 .footer_social {

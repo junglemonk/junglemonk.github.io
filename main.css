@@ -28,7 +28,8 @@ html {
  */
 /* line 18, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 body {
-  margin: 0; }
+  margin: 0;
+  font-size: 100%; }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -38,7 +39,7 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 44, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 45, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
 
@@ -46,7 +47,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 56, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 57, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 audio, canvas, progress, video {
   display: inline-block;
   /* 1 */
@@ -57,7 +58,7 @@ audio, canvas, progress, video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 66, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 67, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -66,7 +67,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-/* line 77, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 78, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 [hidden], template {
   display: none; }
 
@@ -75,14 +76,14 @@ audio:not([controls]) {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 88, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 89, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 a {
   background-color: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 97, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 98, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 a:active, a:hover {
   outline: 0; }
 
@@ -91,21 +92,21 @@ a:active, a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 108, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 109, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 117, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 118, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 b, strong {
   font-weight: bold; }
 
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 125, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 126, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 dfn {
   font-style: italic; }
 
@@ -113,7 +114,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-/* line 134, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 135, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -121,7 +122,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 143, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 144, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 mark {
   background: #ff0;
   color: #000; }
@@ -129,25 +130,25 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 152, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 153, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 small {
   font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 161, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 162, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
-/* line 168, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 169, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 sup {
   top: -0.5em; }
 
-/* line 172, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 173, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 sub {
   bottom: -0.25em; }
 
@@ -156,14 +157,14 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-/* line 183, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 184, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 img {
   border: 0; }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 191, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 192, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -172,14 +173,14 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
-/* line 202, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 203, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 figure {
   margin: 1em 40px; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 210, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 211, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -188,14 +189,14 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
-/* line 220, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 221, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 pre {
   overflow: auto; }
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 231, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 232, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 code, kbd, pre, samp {
   font-family: monospace, monospace;
   font-size: 1em; }
@@ -212,7 +213,7 @@ code, kbd, pre, samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 255, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 256, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 button, input, optgroup, select, textarea {
   color: inherit;
   /* 1 */
@@ -224,7 +225,7 @@ button, input, optgroup, select, textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 265, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 266, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 button {
   overflow: visible; }
 
@@ -234,7 +235,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 277, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 278, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 button, select {
   text-transform: none; }
 
@@ -245,7 +246,7 @@ button, select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 292, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 293, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -255,14 +256,14 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 302, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 303, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 button[disabled], html input[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 311, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 312, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
@@ -271,7 +272,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 321, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 322, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 input {
   line-height: normal; }
 
@@ -282,7 +283,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 334, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 335, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
@@ -294,7 +295,7 @@ input[type="checkbox"], input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 346, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 347, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
@@ -303,7 +304,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 356, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 357, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -317,14 +318,14 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 370, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 371, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 378, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 379, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -334,7 +335,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 389, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 390, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 legend {
   border: 0;
   /* 1 */
@@ -344,7 +345,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-/* line 398, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 399, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 textarea {
   overflow: auto; }
 
@@ -352,7 +353,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 407, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 408, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 optgroup {
   font-weight: bold; }
 
@@ -361,12 +362,12 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-/* line 418, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 419, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 424, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
+/* line 425, C:/Users/junglemonk/Desktop/junglemonk.github.io/normalize */
 td, th {
   padding: 0; }
 
@@ -381,35 +382,37 @@ td, th {
 body {
   font-family: "Press Start 2P";
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 100%;
+  /*16px*/ }
 
-/* line 16, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 17, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 a {
   text-decoration: none;
   text-transform: uppercase; }
 
-/* line 21, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 22, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 b {
   color: #229cd4; }
 
-/* line 25, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 26, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 ul {
   list-style: none;
   margin: 0;
   padding: 0; }
 
 /*UNIVERSAL*/
-/* line 31, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 32, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .wrap {
   margin: auto;
   min-width: 960px;
   width: 100%; }
 
-/* line 37, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 38, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .header {
   height: 84px; }
 
-/* line 41, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 42, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .logo {
   background: url(images/LOGO.png);
   display: inline-block;
@@ -418,18 +421,19 @@ ul {
   margin: 11px 0 0 24px;
   float: left; }
 
-/* line 51, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 52, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .menu {
   text-align: center;
   padding-top: 36px; }
 
-/* line 56, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 57, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .menu_item {
   margin-right: 15px;
   color: #332f2f;
-  font-size: 12px; }
+  font-size: 0.75em;
+  /*14px / 16px*/ }
 
-/* line 62, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 63, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .basket {
   height: 84px;
   float: right;
@@ -441,21 +445,23 @@ ul {
   margin-right: 11px;
   color: #332f2f;
   text-align: right;
-  font-size: 9px;
+  font-size: 0.5625em;
+  /*9px / 16px*/
   padding: 21px 12px 25px 18px; }
   /* line 77, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
   .basket_sum span {
     color: #999999; }
   /* line 80, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
   .basket_sum b {
-    font-size: 14px; }
+    font-size: 1.55556em;
+    /*14px / 9px*/ }
   /* line 83, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
   .basket_sum pre {
     font-family: "Press Start 2P";
     margin: 0 0 10px 0; }
 
 /***ROW***/
-/* line 91, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 90, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row {
   background: url(images/Ellipse-3-copy.png) no-repeat center center;
   display: inline-block;
@@ -463,22 +469,26 @@ ul {
   width: 100%;
   background-size: cover;
   position: relative; }
-  /* line 99, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+  /* line 98, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
   .row a {
     color: #ffffff;
     font-size: 14px; }
 
-/* line 107, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 106, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_stud_butt {
   background-color: #ff4911;
   height: 31px;
-  border: 0px;
+  border: none;
   position: absolute;
   left: 315px;
   box-shadow: 0 2px #b9360d;
   padding: 9px 10px 9px 10px; }
+  /* line 115, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+  .row_stud_butt a {
+    font-size: 0.875em;
+    /*14px / 16px*/ }
 
-/* line 117, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 120, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_stud_make {
   width: 213px;
   height: 48px;
@@ -488,14 +498,14 @@ ul {
   left: 500px;
   top: 60px; }
 
-/* line 128, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 131, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_stud {
   width: 960px;
   height: 91px;
   position: relative;
   margin: 0 auto; }
 
-/* line 136, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 139, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_botton {
   width: 960px;
   height: 140px;
@@ -503,7 +513,7 @@ ul {
   margin: 0 auto;
   margin-top: 170px; }
 
-/* line 144, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 147, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_botton_make {
   width: 185px;
   height: 138px;
@@ -513,7 +523,7 @@ ul {
   position: absolute;
   left: 295px; }
 
-/* line 154, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 157, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_botton_txt {
   width: 195px;
   height: 110px;
@@ -522,7 +532,7 @@ ul {
   position: absolute;
   left: 70px; }
 
-/* line 164, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 167, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_button_left {
   height: 31px;
   position: absolute;
@@ -532,9 +542,13 @@ ul {
   border: 0px;
   box-shadow: 0 2px #b9360d;
   padding: 9px 10px 9px 10px; }
+  /* line 177, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+  .row_button_left a {
+    font-size: 0.875em;
+    /*14px / 16px*/ }
 
 /***ROW_TWO***/
-/* line 178, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 183, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_two {
   background: url(images/backgrounds.png) center center;
   width: 100%;
@@ -542,23 +556,24 @@ ul {
   margin-top: -100px;
   display: inline-block; }
 
-/* line 187, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 192, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_two_top {
   width: 284px;
   height: 40px;
   background: url(images/MergedLayers3.png);
   margin: 140px auto; }
 
-/* line 195, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 200, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_two_3steps {
   width: 960px;
   position: relative;
   margin: -100px auto; }
-  /* line 200, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+  /* line 205, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
   .row_two_3steps span {
-    font-size: 11px; }
+    font-size: 0.6875em;
+    /*11px / 16px*/ }
 
-/* line 205, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 210, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_two__one {
   width: 230px;
   /*min-width*/
@@ -567,7 +582,7 @@ ul {
   position: absolute;
   padding-top: 126px; }
 
-/* line 216, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 221, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_two__two {
   width: 180px;
   height: 150px;
@@ -576,7 +591,7 @@ ul {
   left: 356px;
   padding-top: 126px; }
 
-/* line 226, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 231, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_two__three {
   width: 230px;
   /*min-width*/
@@ -587,7 +602,7 @@ ul {
   padding-top: 126px; }
 
 /***ROW_THREE***/
-/* line 236, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 241, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_three {
   background: url(images/backgroundsrow3.png);
   display: inline-block;
@@ -596,7 +611,7 @@ ul {
   margin-top: -4px;
   line-height: 20px; }
 
-/* line 246, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 251, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_three_counter {
   margin: auto;
   margin-top: 45px;
@@ -604,20 +619,21 @@ ul {
   height: 67px;
   position: relative; }
 
-/* line 254, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 259, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_three__content {
   width: 572px;
   position: absolute;
   background: url(images/counter.png) no-repeat;
   margin-left: 160px;
   padding: 20px 0 0 260px; }
-  /* line 261, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+  /* line 266, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
   .row_three__content span {
     color: #ffffff;
-    font-size: 14px; }
+    font-size: 0.875em;
+    /*14px / 16px*/ }
 
 /***ROW_FOUR***/
-/* line 267, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 272, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_four {
   width: 100%;
   height: 900px;
@@ -625,10 +641,6 @@ ul {
   margin-top: -4px;
   display: inline-block;
   position: relative; }
-  /* line 275, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
-  .row_four p {
-    margin: 0;
-    font: 400 16.59px/24.124px; }
 
 /* line 281, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row__pic1 {
@@ -642,49 +654,51 @@ ul {
   float: left;
   width: 317px;
   margin: 0 0px;
-  font-size: 12px; }
+  font-size: 0.75em;
+  /*12px / 16px*/ }
+  /* line 294, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+  .row__column span {
+    white-space: pre-line; }
+  /* line 298, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+  .row__column b {
+    font-size: 1.16667em;
+    /*14px / 12px*/ }
 
-/* line 295, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 303, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_four_gallary {
   width: 951px;
   height: 745px;
   margin: 40px auto;
   line-height: 15px; }
-  /* line 301, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
-  .row_four_gallary span {
-    white-space: pre-line; }
-  /* line 305, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
-  .row_four_gallary b {
-    font-size: 14px; }
 
-/* line 312, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 314, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row__pic2 {
   background: url(images/gallaryInveder.png) no-repeat;
   height: 383px;
   padding: 330px 0 20px 0; }
 
-/* line 318, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 320, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row__pic3 {
   background: url(images/gallaryLiza.png) no-repeat;
   height: 383px;
   padding: 330px 0 20px 0; }
 
-/* line 324, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 326, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row__pic4 {
   background: url(images/gallaryMonroe.png) no-repeat;
   height: 360px; }
 
-/* line 329, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 331, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row__pic5 {
   background: url(images/gallaryGranate.png) no-repeat;
   height: 360px; }
 
-/* line 334, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 336, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row__pic6 {
   background: url(images/gallaryPhone.png) no-repeat;
   height: 360px; }
 
-/* line 339, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 341, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_four__button {
   width: 220px;
   height: 31px;
@@ -693,20 +707,21 @@ ul {
   border: 0;
   position: absolute;
   left: 370px; }
-  /* line 347, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+  /* line 349, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
   .row_four__button a {
     text-align: center;
     color: #ffffff;
-    font-size: 14px/31px; }
+    font-size: 0.875em;
+    /*14px / 16px*/ }
 
-/* line 356, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 358, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_four_center_button {
   width: 960px;
   height: 33px;
   position: relative;
   margin: auto; }
 
-/* line 363, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 365, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_five {
   width: 100%;
   height: 510px;
@@ -714,7 +729,7 @@ ul {
   background-size: cover; }
 
 /***FOOTER***/
-/* line 371, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 373, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .footer {
   min-width: 960px;
   width: 100%;
@@ -722,10 +737,11 @@ ul {
   background-color: #ffffff;
   position: relative;
   display: inline-block;
-  font-size: 10px;
+  font-size: 0.84813em;
+  /*13.57px / 16px*/
   line-height: 20px; }
 
-/* line 383, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 384, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .footer_txt {
   height: 11px;
   float: left;
