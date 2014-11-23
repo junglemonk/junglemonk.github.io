@@ -1,6 +1,7 @@
 @media all (orientation:portrait), all and (max-width:320px)   {
     
-    body {
-        color: red;
+    .wrap {
+        min-width: 320px;
+        display: block;
     }
 }
