@@ -2,6 +2,6 @@
     
     .wrap {
         min-width: none;
-        display: block;
+        display: inline;
     }
 }
