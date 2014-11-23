@@ -1,6 +1,7 @@
 @media all (orientation:portrait), all and (max-width:320px)   {
     
     .wrap {
+        width: 100%;
         min-width: none;
         display: inline;
     }
