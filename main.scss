@@ -51,7 +51,6 @@ body {
     font-family: "Press Start 2P";
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 100%; /*16px*/
 }
 a { 
     text-decoration: none;
@@ -90,10 +89,7 @@ ul {
     margin: 10px  0 0 1.32013201320132% ; /*24px / 1818px*/
     float: left;
     
-//     @include respond-to(handhelds) {
-//         width: 36%;
-//         margin: 0;
-//    }
+
     @include respond-to(normal) {
          width: 20%;
          min-width: 112px;
@@ -117,10 +113,6 @@ ul {
 }
 
 .basket {
-<<<<<<< HEAD
-=======
-    height: 84px;
->>>>>>> origin/master
     float: right;
     display:inline-block;
     background: #e4e3e3;
@@ -130,7 +122,6 @@ ul {
             color: #332f2f;
             text-align: right;
             font-size: 0.5625em; /*9px / 16px*/
-<<<<<<< HEAD
             padding: 21px 23px 15px 18px;
     
      @include respond-to(handhelds) {
@@ -161,15 +152,6 @@ ul {
 //                    font-size: 1.2em;
             }
     
-=======
-            padding: 21px 12px 25px 18px;
-    
-        span {
-            color: #999999;
-        }
-          b {
-              font-size: 1.555555555555556em; /*14px / 9px*/
->>>>>>> origin/master
           }
         pre {
             font-family: "Press Start 2P";
@@ -203,7 +185,6 @@ ul {
     box-shadow: 0 2px #b9360d;
     padding: 9px 10px 9px 10px;
     
-<<<<<<< HEAD
     @include respond-to(normal) {
         position: static;
         float: left;
@@ -213,11 +194,6 @@ ul {
 //        position: static;
 //        float: left;
 //    }
-=======
-        a {
-            font-size: 0.875em; /*14px / 16px*/
-        }
->>>>>>> origin/master
 }
 
 .row_stud_make {
@@ -368,13 +344,10 @@ ul {
     
     span {
         font-size: 0.6875em; /*11px / 16px*/
-<<<<<<< HEAD
     }
     
     @include respond-to(handhelds) {
         font-size: 0.8em;
-=======
->>>>>>> origin/master
     }
     @include respond-to(normal){
         width: 100%;
@@ -473,15 +446,9 @@ ul {
     background-position: 50%;
     background-size: contain;
     
-<<<<<<< HEAD
     @include respond-to(normal){
         margin: 0 3% 0 20%;
         min-width: 180px;
-=======
-    span {
-        color: #ffffff;
-        font-size: 0.875em; /*14px / 16px*/
->>>>>>> origin/master
     }
 }
 
@@ -493,10 +460,7 @@ ul {
     margin-bottom: 53px;
     display: inline-block;
     position: relative;
-<<<<<<< HEAD
     
-=======
->>>>>>> origin/master
 }
 
 
@@ -504,7 +468,6 @@ ul {
 
 .row__column {
     @include column(1);
-<<<<<<< HEAD
     min-width: 155px;
     
     @include respond-to(handhelds) {
@@ -525,17 +488,6 @@ ul {
             } 
      }
 
-=======
-    font-size: 0.75em; /*12px / 16px*/
-    
-     span {
-        white-space: pre-line;
-    }
-    
-    b {
-        font-size: 1.166666666666667em; /*14px / 12px*/
-    }
->>>>>>> origin/master
 }
 
 .row_four_gallary {
@@ -544,15 +496,12 @@ ul {
     line-height: 15px;
     font-size: 0.75em; /*12px / 16px*/
     
-<<<<<<< HEAD
     @include respond-to(normal){
         width: 100%;
         height: 100%;
         font-size: 0.7em;
     }
     
-=======
->>>>>>> origin/master
    
 }
 
@@ -638,7 +587,6 @@ ul {
     background-color: #ffffff;
     position: relative;
     display: inline-block;
-<<<<<<< HEAD
     font-size: 0.6em;
 //    font-size: 0.848125em; /*13.57px / 16px*/
     line-height: 20px;
@@ -648,16 +596,11 @@ ul {
         width: 100%;
         height: 100%;
     }
-=======
-    font-size: 0.848125em; /*13.57px / 16px*/
-    line-height: 20px;
->>>>>>> origin/master
 }
 
 .footer_txt {
     float: left;
     display: inline-block;
-<<<<<<< HEAD
    
      @include respond-to(handhelds) {
         font-size: 0.8em;
@@ -670,8 +613,6 @@ ul {
         left: 37%;
         padding-top: 1%;
     }
-=======
->>>>>>> origin/master
 }
 
 /***SOCIAL***/
