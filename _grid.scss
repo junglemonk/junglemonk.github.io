@@ -3,9 +3,11 @@
 /////////////////
 
 // Defaults which you can freely override
-$column-width: 317px;
-$gutter-width: 0px;
+$column-width: 33.33333333333333%; /*317px*/
+$gutter-width: 0;
 $columns: 6;
+
+
 
 // Utility function — you should never need to modify this
 @function gridsystem-width($columns:$columns) {
