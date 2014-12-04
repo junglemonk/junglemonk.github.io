@@ -1,19 +1,26 @@
 @import 'grid';
 @import 'normalize';
 
+
+$phones: 290px;
 $small: 480px;
 $medium-screens: 768px;
 $normal: 980px;
 
+//(min-width: $phones-b)
+
 @mixin respond-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: $small) { @content; }
+    @if $media == crappy{
+    @media only screen and (max-width: $phones) { @content; }
+  }
+  @else if $media == handhelds {
+    @media only screen and (max-width: $small) { @content; } 
   }
   @else if $media == medium-screens {
     @media only screen and (min-width: $small + 1) and (max-width: $medium-screens) { @content; }
   }
     @else if $media == normal {
-    @media only screen and  (max-width: $normal - 1) { @content; }
+    @media only screen and (min-width: $phones + 1) and  (max-width: $normal - 1) { @content; }
   }
   @else if $media == wide-screens {
     @media only screen and (min-width: $normal) { @content; }
@@ -78,6 +85,11 @@ ul {
     height: 84px;
     position: relative;
     
+    @include respond-to(crappy) {
+        font-size: 0.6em;
+//        height: 90px;
+    }
+    
 }
 
 .logo {
@@ -90,6 +102,14 @@ ul {
     float: left;
     
 
+    @include respond-to(crappy) {
+        width: 20%;
+        min-width: 90px;
+        background: url(images/logo-phone.png) no-repeat center center;
+        margin: 0;
+        background-size: contain;
+    }
+    
     @include respond-to(normal) {
          width: 20%;
          min-width: 112px;
@@ -172,6 +192,10 @@ ul {
         color: #ffffff;
         font-size: 0.875em; /*14px / 16px*/
     }
+    
+    @include respond-to(handhelds) {
+        background: url(images/Ellipse-Phone480.png);
+    }
 }
 
 
@@ -189,11 +213,6 @@ ul {
         position: static;
         float: left;
     }
-    
-//    @include respond-to(handhelds) {
-//        position: static;
-//        float: left;
-//    }
 }
 
 .row_stud_make {
@@ -212,14 +231,6 @@ ul {
         margin-top: 40px;
         width: 60.375%;
     }
-    
-//    @include respond-to(handhelds) {
-//        position: static;
-//        float: left;
-//        margin-top: 40px;
-//        width: 60.375%;
-//    }
-//    
 }
 
 .row_stud {
@@ -233,7 +244,7 @@ ul {
     }
     @include respond-to(normal){
         width: 100%;
-    } //ggg
+    }
 }
 
 
@@ -246,7 +257,7 @@ ul {
     
      @include respond-to(normal) {
         width: 100%;
-    }// ggg
+    }
 }
 
 .row_botton_make {
@@ -351,7 +362,7 @@ ul {
     }
     @include respond-to(normal){
         width: 100%;
-    } //ggg
+    }
 }
 
 .row_two__one {
@@ -388,7 +399,7 @@ ul {
 }
 
 .row_two__three {
-    width: 230px;/*min-width*/
+    width: 230px;
     height: 150px;
     background: url(images/step3.png) no-repeat;
     position: absolute;
@@ -588,7 +599,6 @@ ul {
     position: relative;
     display: inline-block;
     font-size: 0.6em;
-//    font-size: 0.848125em; /*13.57px / 16px*/
     line-height: 20px;
     padding: 2% 0 3% 2%;
     
@@ -710,13 +720,6 @@ ul {
     }
     
 }
-    
-
-
-
-
-
-
 
 .row_three__txt {
     width: 33.25%; /*300px*/
