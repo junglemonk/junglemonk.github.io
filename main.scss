@@ -2,25 +2,24 @@
 @import 'normalize';
 
 
-$phones: 290px;
+$phones: 240px;
+$mobile: 300px;
 $small: 480px;
 $medium-screens: 768px;
 $normal: 980px;
 
-//(min-width: $phones-b)
-
 @mixin respond-to($media) {
     @if $media == crappy{
-    @media only screen and (max-width: $phones) { @content; }
+    @media only screen and (min-width: $phones) and (max-width: $mobile){ @content; }
   }
-  @else if $media == handhelds {
-    @media only screen and (max-width: $small) { @content; } 
+  @if $media == handhelds {
+    @media only screen and (min-width: $phones) and (max-width: $small) { @content; } 
   }
   @else if $media == medium-screens {
     @media only screen and (min-width: $small + 1) and (max-width: $medium-screens) { @content; }
   }
     @else if $media == normal {
-    @media only screen and (min-width: $phones + 1) and  (max-width: $normal - 1) { @content; }
+    @media only screen and (min-width: $phones) and  (max-width: $normal - 1) { @content; }
   }
   @else if $media == wide-screens {
     @media only screen and (min-width: $normal) { @content; }
@@ -84,12 +83,6 @@ ul {
 .header {
     height: 84px;
     position: relative;
-    
-    @include respond-to(crappy) {
-        font-size: 0.6em;
-//        height: 90px;
-    }
-    
 }
 
 .logo {
@@ -101,20 +94,17 @@ ul {
     margin: 10px  0 0 1.32013201320132% ; /*24px / 1818px*/
     float: left;
     
-
-    @include respond-to(crappy) {
-        width: 20%;
-        min-width: 90px;
-        background: url(images/logo-phone.png) no-repeat center center;
-        margin: 0;
-        background-size: contain;
-    }
-    
     @include respond-to(normal) {
          width: 20%;
-         min-width: 112px;
+         min-width: 110px;
          margin: 0;
      }
+    @include respond-to(crappy) {
+        min-width: 90px;
+        height: 50px;
+        background: url(images/logo-phone.png) no-repeat center center;
+        margin: 0;
+    }
 }
 
 .menu {
@@ -124,6 +114,10 @@ ul {
      @include respond-to(handhelds) {
         padding: 58px 0 0 3%;
     }
+    @include respond-to(crappy) {
+        font-size: 0.8em;
+    }
+    
 }
 
 .menu_item {
@@ -192,6 +186,9 @@ ul {
         color: #ffffff;
         font-size: 0.875em; /*14px / 16px*/
     }
+    @include respond-to(normal) {
+        background: url(images/Ellipse-Tablet980.png) no-repeat center center;
+    }
     
     @include respond-to(handhelds) {
         background: url(images/Ellipse-Phone480.png);
@@ -209,6 +206,10 @@ ul {
     box-shadow: 0 2px #b9360d;
     padding: 9px 10px 9px 10px;
     
+    @include respond-to(crappy){
+        position: static;
+        float: left;
+    }
     @include respond-to(normal) {
         position: static;
         float: left;
@@ -225,6 +226,13 @@ ul {
     top: 60px;
     background-size: contain;
     
+    
+    @include respond-to(crappy){
+        position: static;
+        float: left;
+        margin: 40px 0 0 -53px;
+        width: 60.375%;
+    }
     @include respond-to(normal) {
         position: static;
         float: left;
@@ -239,7 +247,12 @@ ul {
     position: relative;
     margin: 0 auto;
     
-     @include respond-to(handhelds) {
+    
+    @include respond-to(crappy){
+        font-size: 0.6em;
+        width: 100%;
+    }
+    @include respond-to(handhelds) {
         font-size: 0.7em;
     }
     @include respond-to(normal){
@@ -255,6 +268,9 @@ ul {
     margin: 0 auto;
     margin-top: 170px;
     
+    @include respond-to(crappy){
+        width: 100%;
+    }
      @include respond-to(normal) {
         width: 100%;
     }
@@ -275,11 +291,14 @@ ul {
         position: static;
         float: left;
     }
-    
     @include respond-to(handhelds) {
         margin-top: 30px;
         min-width: 132px;
         width: 30.54166666666667%;
+    }
+    @include respond-to(crappy){
+        margin-top: 58px;
+        min-width: 90px;
     }
 }
 
@@ -291,7 +310,7 @@ ul {
     position: absolute;
     left: 70px;
     background-size: contain;
-    
+
      @include respond-to(normal) {
         position: static;
         float: left;
@@ -299,11 +318,13 @@ ul {
          width: 30.375%;
          min-width: 160px;
     }
-    
      @include respond-to(handhelds) {
         min-width: 140px;
         width: 44.375%;
         margin: 0;
+    }
+    @include respond-to(crappy){
+        min-width: 120px; 
     }
 }
 
@@ -322,6 +343,9 @@ ul {
             font-size: 0.875em;  /*14px / 16px*/
         }
     
+    @include respond-to(crappy){
+        font-size: 0.6em;
+    }
     @include respond-to(handhelds) {
         font-size: 0.7em;
     }
@@ -337,14 +361,19 @@ ul {
     @include respond-to(handhelds) {
         height: 390px;
     }
-    
 }
 
 .row_two_top {
     width: 284px;
     height: 40px;
-    background: url(images/MergedLayers3.png);
+    background: url(images/MergedLayers3.png) no-repeat;
     margin: 140px auto;
+    
+    @include respond-to(crappy){
+        width: 170px;
+        margin: 100 auto;
+        background-size: contain;
+    }
     
 }
 
@@ -432,10 +461,7 @@ ul {
     margin: auto;
     margin-top: 45px;
     width: 960px;
-//    height: 67px;
     position: relative;
-    
-    
     
     @include respond-to(handhelds) {
         display: none;
@@ -444,7 +470,6 @@ ul {
     @include respond-to(normal){
         width: 100%;
     }
-    
 }
 
 .row_three__content {
@@ -486,7 +511,10 @@ ul {
         min-width: 150px;
         font-size: 0.7em;   
     }
-    
+    @include respond-to(crappy) {
+        width: 100%;
+           
+    }
      span {
          white-space: pre-line;
      }
@@ -521,6 +549,14 @@ ul {
     background-position: 50%;
     background-size: cover;
     margin: 0 auto 1em;
+    
+     
+    @include respond-to(handhelds) {
+        background: url(images/gallaryLacoste240.png);
+        background-position: 50%;
+        background-size: cover;
+        margin: 0 auto 1em;
+    }
 }
 
 .row__pic2 {
@@ -528,6 +564,13 @@ ul {
     background-position: 50%;
     background-size: cover;
     margin: 0 auto 1em;
+    
+    @include respond-to(handhelds) {
+        background: url(images/gallaryInveder240.png);
+        background-position: 50%;
+        background-size: cover;
+        margin: 0 auto 1em;
+    }
 }
 
 .row__pic3 {
@@ -535,6 +578,13 @@ ul {
     background-position: 50%;
     background-size: cover;
     margin: 0 auto 1em;
+    
+    @include respond-to(handhelds) {
+        background: url(images/gallaryLiza240.png);
+        background-position: 50%;
+        background-size: cover;
+        margin: 0 auto 1em;
+    }
 }
 
 .row__pic4 {
@@ -542,6 +592,13 @@ ul {
     background-position: 50%;
     background-size: cover;
     margin: 0 auto 1em;
+    
+    @include respond-to(handhelds) {
+        background: url(images/gallaryMonroe240.png);
+        background-position: 50%;
+        background-size: cover;
+        margin: 0 auto 1em;
+    }
 }
 
 .row__pic5 {
@@ -549,6 +606,13 @@ ul {
     background-position: 50%;
     background-size: cover;
     margin: 0 auto 1em;
+    
+    @include respond-to(handhelds) {
+        background: url(images/gallaryGranate240.png);
+        background-position: 50%;
+        background-size: cover;
+        margin: 0 auto 1em;
+    }
 }
 
 .row__pic6 {
@@ -556,6 +620,13 @@ ul {
     background-position: 50%;
     background-size: cover;
     margin: 0 auto 1em;
+    
+    @include respond-to(handhelds) {
+        background: url(images/gallaryPhone240.png);
+        background-position: 50%;
+        background-size: cover;
+        margin: 0 auto 1em;
+    }
 }
 
 .row_four__button {
@@ -589,6 +660,13 @@ ul {
     background-position: 50%;
     background-size: cover;
     margin: 0 auto;
+    
+    @include respond-to(normal) {
+        background: url(images/row5background980.png);
+        background-position: 50%;
+        background-size: cover;
+        margin: 0 auto;
+    }
 }
 
 /***FOOTER***/
@@ -611,17 +689,20 @@ ul {
 .footer_txt {
     float: left;
     display: inline-block;
-   
-     @include respond-to(handhelds) {
-        font-size: 0.8em;
-        margin-left: -7%;
-    }
     
-    @include respond-to(normal){
+    @include respond-to(normal) {
         position: absolute;
         top: 120%;
         left: 37%;
         padding-top: 1%;
+    }
+    @include respond-to(handhelds) {
+        font-size: 0.8em;
+        left: 30%;
+    }
+    @include respond-to(crappy) {
+        left: 15%;
+        top: 110%;
     }
 }
 
@@ -682,11 +763,15 @@ ul {
     position: absolute;
     background: url(images/LOGO-footer.png);
     
-    @include respond-to(handhelds){
-        margin-left: -5%;
-    }
+    
     @include respond-to(normal){
         top: 90%;
+    }
+    @include respond-to(handhelds){
+        left: 44%;
+    }
+    @include respond-to(crappy) {
+        left: 40%;
     }
 }
 
@@ -718,7 +803,9 @@ ul {
     @include respond-to(handhelds){
        display: block;
     }
-    
+    @include respond-to(crappy) {
+        margin-bottom: 10px;
+    }
 }
 
 .row_three__txt {
