@@ -161,11 +161,6 @@ ul {
           
             b {
                 font-size: 1.555555555555556em; /*14px / 9px*/
-              
-                @include respond-to(handhelds) {
-//                    font-size: 1.2em;
-            }
-    
           }
         pre {
             font-family: "Press Start 2P";
@@ -175,7 +170,8 @@ ul {
 
 /***ROW***/
 .row {
-    background: url(images/Ellipse-3-copy.png) no-repeat center center;
+//    background: url(images/Ellipse-3-copy.png) no-repeat center center;
+    background: url(images/optimized/Ellipse-3-copy.jpg) no-repeat center center;
     display: inline-block;
     height: 440px;
     width: 100%;
@@ -187,11 +183,13 @@ ul {
         font-size: 0.875em; /*14px / 16px*/
     }
     @include respond-to(normal) {
-        background: url(images/Ellipse-Tablet980.png) no-repeat center center;
+//        background: url(images/Ellipse-Tablet980.png) no-repeat center center;
+        background: url(images/optimized/Ellipse-Tablet980.jpg) no-repeat center center;
     }
     
     @include respond-to(handhelds) {
-        background: url(images/Ellipse-Phone480.png);
+//        background: url(images/Ellipse-Phone480.png);
+         background: url(images/optimized/Ellipse-Phone480.jpg) no-repeat center center;
     }
 }
 
@@ -552,7 +550,8 @@ ul {
     
      
     @include respond-to(handhelds) {
-        background: url(images/gallaryLacoste240.png);
+//        background: url(images/gallaryLacoste240.png);
+        background: url(images/optimized/gallaryLacoste240.jpg) no-repeat;
         background-position: 50%;
         background-size: cover;
         margin: 0 auto 1em;
@@ -566,7 +565,8 @@ ul {
     margin: 0 auto 1em;
     
     @include respond-to(handhelds) {
-        background: url(images/gallaryInveder240.png);
+//        background: url(images/gallaryInveder240.png);
+        background: url(images/optimized/gallaryInveder240.jpg) no-repeat;
         background-position: 50%;
         background-size: cover;
         margin: 0 auto 1em;
@@ -580,7 +580,8 @@ ul {
     margin: 0 auto 1em;
     
     @include respond-to(handhelds) {
-        background: url(images/gallaryLiza240.png);
+//        background: url(images/gallaryLiza240.png);
+        background: url(images/optimized/gallaryLiza240.jpg) no-repeat;
         background-position: 50%;
         background-size: cover;
         margin: 0 auto 1em;
@@ -594,7 +595,8 @@ ul {
     margin: 0 auto 1em;
     
     @include respond-to(handhelds) {
-        background: url(images/gallaryMonroe240.png);
+//        background: url(images/gallaryMonroe240.png);
+        background: url(images/optimized/gallaryMonroe240.jpg) no-repeat;
         background-position: 50%;
         background-size: cover;
         margin: 0 auto 1em;
@@ -608,7 +610,8 @@ ul {
     margin: 0 auto 1em;
     
     @include respond-to(handhelds) {
-        background: url(images/gallaryGranate240.png);
+//        background: url(images/gallaryGranate240.png);
+        background: url(images/optimized/gallaryGranate240.png) no-repeat;
         background-position: 50%;
         background-size: cover;
         margin: 0 auto 1em;
@@ -622,7 +625,8 @@ ul {
     margin: 0 auto 1em;
     
     @include respond-to(handhelds) {
-        background: url(images/gallaryPhone240.png);
+//        background: url(images/gallaryPhone240.png);
+        background: url(images/optimized/gallaryPhone240.png) no-repeat;
         background-position: 50%;
         background-size: cover;
         margin: 0 auto 1em;
