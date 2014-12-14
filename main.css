@@ -425,27 +425,29 @@ ul {
 
 /*UNIVERSAL*/
 /* line 77, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/*
 .wrap {
   margin: auto;
   max-width: 1500px;
   width: 100%; }
+*/
 
 /* line 83, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
-.header {
-  height: 84px;
-  position: relative; }
+/*.header {*/
+/*  height: 84px;*/
+/*  position: relative; }*/
 
-/* line 88, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 88, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss 
 .logo {
   background: url(images/LOGO.png) no-repeat center center;
   display: inline-block;
   width: 195px;
-  /*10.72607260726073%*/
+  
   background-size: contain;
   height: 64.28571%;
-  /*54px / 84px*/
+
   margin: 10px 0 0 1.32013%;
-  /*24px / 1818px*/
+
   float: left; }
   @media only screen and (min-width: 240px) and (max-width: 979px) {
     .logo {
@@ -459,7 +461,7 @@ ul {
       background: url(images/logo-phone.png) no-repeat center center;
       margin: 0; } }
 
-/* line 110, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 110, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss 
 .menu {
   text-align: center;
   padding-top: 36px; }
@@ -470,25 +472,25 @@ ul {
     .menu {
       font-size: 0.8em; } }
 
-/* line 123, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 123, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss 
 .menu_item {
   margin-right: 1.08475%;
   color: #332f2f;
   font-size: 0.75em;
   /*14px / 16px*/ }
 
-/* line 129, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 129, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss 
 .basket {
   float: right;
   display: inline-block;
   background: #e4e3e3; }
 
-/* line 135, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+/* line 135, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss 
 .basket_sum {
   color: #332f2f;
   text-align: right;
   font-size: 0.5625em;
-  /*9px / 16px*/
+
   padding: 21px 23px 15px 18px; }
   @media only screen and (min-width: 240px) and (max-width: 480px) {
     .basket_sum {
@@ -497,7 +499,7 @@ ul {
   @media only screen and (min-width: 481px) and (max-width: 768px) {
     .basket_sum {
       padding: 21px 1px 15px 1px; } }
-  /* line 149, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+  /* line 149, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss 
   .basket_sum span {
     color: #999999;
     font-size: 1.1em; }
@@ -507,11 +509,11 @@ ul {
     @media only screen and (min-width: 481px) and (max-width: 768px) {
       .basket_sum span {
         display: none; } }
-  /* line 162, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+  /* line 162, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss 
   .basket_sum b {
     font-size: 1.55556em;
-    /*14px / 9px*/ }
-  /* line 165, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
+     }
+  /* line 165, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss 
   .basket_sum pre {
     font-family: "Press Start 2P";
     margin: 0 0 10px 0; }
