@@ -9,7 +9,563 @@
 
         <meta name="sivac" content="Pic-a-Pix">
         
-        <style></style>
+        <style>
+body {
+width:100%;
+*zoom:1
+}
+
+body:before,body:after {
+content:"";
+display:table
+}
+
+body:after {
+clear:both
+}
+
+html {
+-ms-text-size-adjust:100%;
+-webkit-text-size-adjust:100%
+}
+
+body {
+margin:0;
+font-size:100%
+}header,nav{
+display:block
+}
+
+a {
+background-color:transparent
+}
+
+b{
+font-weight:bold
+}
+
+pre {
+overflow:auto
+}pre{
+font-family:monospace,monospace;
+font-size:1em
+}
+
+button{
+color:inherit;
+font:inherit;
+margin:0
+}
+
+button {
+overflow:visible
+}
+
+button{
+text-transform:none
+}
+
+button{
+-webkit-appearance:button;
+cursor:pointer
+}
+
+button::-moz-focus-inner{
+border:0;
+padding:0
+}
+
+* {
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box
+}
+
+body {
+font-family:"Press Start 2P";
+font-weight:400;
+text-transform:uppercase
+}
+
+a {
+text-decoration:none;
+text-transform:uppercase;
+color:red
+}
+
+b {
+color:#229cd4
+}
+
+ul {
+list-style:none;
+margin:0;
+padding:0
+}
+
+.wrap {
+margin:auto;
+max-width:1500px;
+width:100%
+}
+
+.header {
+height:84px;
+position:relative
+}
+
+.logo {
+background:url(images/LOGO.png) no-repeat center center;
+display:inline-block;
+width:195px;
+background-size:contain;
+height:64.28571%;
+margin:10px 0 0 1.32013%;
+float:left
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.logo {
+width:20%;
+min-width:110px;
+margin:0
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.logo {
+min-width:90px;
+height:50px;
+background:url(images/logo-phone.png) no-repeat center center;
+margin:0
+}
+}
+
+.menu {
+text-align:center;
+padding-top:36px
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.menu {
+padding:58px 0 0 3%
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.menu {
+font-size:.8em
+}
+}
+
+.menu_item {
+margin-right:1.08475%;
+color:#332f2f;
+font-size:.75em
+}
+
+.basket {
+float:right;
+display:inline-block;
+background:#e4e3e3
+}
+
+.basket_sum {
+color:#332f2f;
+text-align:right;
+font-size:.5625em;
+padding:21px 23px 15px 18px
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.basket_sum {
+padding:5% 0 0;
+font-size:.5em
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+.basket_sum {
+padding:21px 1px 15px
+}
+}
+
+.basket_sum span {
+color:#999999;
+font-size:1.1em
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.basket_sum span {
+display:none
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+.basket_sum span {
+display:none
+}
+}
+
+.basket_sum b {
+font-size:1.55556em
+}
+
+.basket_sum pre {
+font-family:"Press Start 2P";
+margin:0 0 10px
+}
+
+.row {
+background:url(images/optimized/Ellipse-3-copy.jpg) no-repeat center center;
+display:inline-block;
+height:440px;
+width:100%;
+background-size:cover;
+position:relative
+}
+
+.row a {
+color:#ffffff;
+font-size:.875em
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row {
+background:url(images/optimized/Ellipse-Tablet980.jpg) no-repeat center center
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.row {
+background:url(images/optimized/Ellipse-Phone480.jpg) no-repeat center center
+}
+}
+
+.row_stud_butt {
+background-color:#ff4911;
+height:31px;
+border:none;
+position:absolute;
+left:315px;
+box-shadow:0 2px #b9360d;
+padding:9px 10px
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_stud_butt {
+position:static;
+float:left
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row_stud_butt {
+position:static;
+float:left
+}
+}
+
+.row_stud_make {
+width:213px;
+height:48px;
+background:url(images/MergedLayers.png) no-repeat;
+float:right;
+position:absolute;
+left:500px;
+top:60px;
+background-size:contain
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_stud_make {
+position:static;
+float:left;
+margin:40px 0 0 -53px;
+width:60.375%
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row_stud_make {
+position:static;
+float:left;
+margin-top:40px;
+width:60.375%
+}
+}
+
+.row_stud {
+width:960px;
+height:91px;
+position:relative;
+margin:0 auto
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_stud {
+font-size:.6em;
+width:100%
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.row_stud {
+font-size:.7em
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row_stud {
+width:100%
+}
+}
+
+.row_botton {
+width:960px;
+height:140px;
+position:relative;
+margin:0 auto;
+margin-top:170px
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_botton {
+width:100%
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row_botton {
+width:100%
+}
+}
+
+.row_botton_make {
+width:185px;
+height:138px;
+background:url(images/advtime.png) no-repeat;
+background-size:cover;
+display:inline-block;
+position:absolute;
+left:295px;
+background-size:contain
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row_botton_make {
+position:static;
+float:left
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.row_botton_make {
+margin-top:30px;
+min-width:132px;
+width:30.54167%
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_botton_make {
+margin-top:58px;
+min-width:90px
+}
+}
+
+.row_botton_txt {
+width:195px;
+height:110px;
+background:url(images/MergedLayersBottom.png) no-repeat;
+display:inline-block;
+position:absolute;
+left:70px;
+background-size:contain
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row_botton_txt {
+position:static;
+float:left;
+margin:1%;
+width:30.375%;
+min-width:160px
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.row_botton_txt {
+min-width:140px;
+width:44.375%;
+margin:0
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_botton_txt {
+min-width:120px
+}
+}
+
+.row_button_left {
+height:31px;
+position:absolute;
+right:0;
+top:0;
+background-color:#ff4911;
+border:0;
+box-shadow:0 2px #b9360d;
+padding:9px 10px
+}
+
+.row_button_left a {
+font-size:.875em
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_button_left {
+font-size:.6em
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.row_button_left {
+font-size:.7em
+}
+}
+
+.row_two {
+background:url(images/backgrounds.png) center center;
+width:100%;
+height:457px;
+margin-top:-100px;
+display:inline-block
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.row_two {
+height:390px
+}
+}
+
+.row_two_top {
+width:284px;
+height:40px;
+background:url(images/MergedLayers3.png) no-repeat;
+margin:140px auto
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_two_top {
+width:170px;
+margin:100px auto;
+background-size:contain
+}
+}
+
+.row_two_3steps {
+width:960px;
+position:relative;
+margin:-100px auto
+}
+
+.row_two_3steps span {
+font-size:.6875em
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.row_two_3steps {
+font-size:.8em
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row_two_3steps {
+width:100%
+}
+}
+
+.row_two__one {
+width:230px;
+height:150px;
+background:url(images/step1.png) no-repeat;
+position:absolute;
+padding-top:155px;
+background-size:contain
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row_two__one {
+width:23.95833%;
+left:2%;
+padding-top:20%
+}
+}
+
+.row_two__two {
+width:180px;
+height:150px;
+background:url(images/step2.png) no-repeat;
+position:absolute;
+left:356px;
+padding-top:155px;
+background-size:contain
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row_two__two {
+width:18.75%;
+left:38.08333%;
+padding-top:20%
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_two__two {
+left:35.08333%
+}
+}
+
+.row_two__three {
+width:230px;
+height:150px;
+background:url(images/step3.png) no-repeat;
+position:absolute;
+left:731px;
+padding-top:155px;
+background-size:contain
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.row_two__three {
+width:23.95833%;
+left:74%;
+padding-top:20%
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_two__three {
+left:67%
+}
+}
+
+.row_three {
+background:url(images/backgroundsrow3.png);
+display:inline-block;
+height:153px;
+width:100%;
+margin-top:-4px;
+line-height:20px
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.row_three {
+display:none
+}
+}
+        </style>
         
         <link rel="stylesheet" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Press+Start+2P&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -107,17 +663,17 @@
                     <div class="row__column">
                         <div class="row__pic4 FlexEmbed FlexEmbed--2by1"></div>
                         <span><b>Монро</b>
-                            120грн</span>
+                            120 грн</span>
                     </div>
                     <div class="row__column">
                         <div class="row__pic5 FlexEmbed FlexEmbed--2by1"></div>
-                        <span><b>Крокодил</b>
-                            60 грн</span>
+                        <span><b>Граната</b>
+                            90 грн</span>
                     </div>
                     <div class="row__column">
                         <div class="row__pic6 FlexEmbed FlexEmbed--2by1"></div>
-                        <span><b>Крокодил</b>
-                            60 грн</span>
+                        <span><b>Телефон</b>
+                            90 грн</span>
                     </div>
                 </div>
                 

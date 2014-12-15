@@ -423,6 +423,9 @@ ul {
         left: 38.08333333333333%;
         padding-top: 20%;
     }
+    @include respond-to(crappy){
+        left: 35.08333333333333%;
+    }
 }
 
 .row_two__three {
@@ -438,6 +441,9 @@ ul {
         width: 23.95833333333333%;
         left: 74%;
         padding-top: 20%;
+    }
+    @include respond-to(crappy){
+        left: 67%;
     }
 }
 /***ROW_THREE***/
@@ -515,6 +521,7 @@ ul {
     }
      span {
          white-space: pre-line;
+         padding-left: 1px;
      }
     
      b {
