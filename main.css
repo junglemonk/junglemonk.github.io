@@ -275,7 +275,7 @@ left:35.08333%
 
 .row_two__three {
 width:230px;
-height:158px;
+height:150px;
 background:url(images/step3.png) no-repeat;
 position:absolute;
 left:731px;
@@ -300,7 +300,7 @@ left:67%
 .row_three {
 background:url(images/backgroundsrow3.png);
 display:inline-block;
-height:153px;
+height:158px;
 width:100%;
 margin-top:-4px;
 line-height:20px
