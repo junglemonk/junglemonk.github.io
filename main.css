@@ -682,7 +682,7 @@ ul {
 /***ROW_TWO***/
 /* line 353, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row_two {
-  background: url(images/backgrounds.png) center center;
+  background: url(images/backgrounds.jpg) center center;
   width: 100%;
   height: 357px;
   display: inline-block; }
@@ -915,7 +915,7 @@ ul {
 
 /* line 614, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row__pic5 {
-  background: url(images/gallaryGranate.png) no-repeat;
+  background: url(images/optimized/gallaryGranate_317_opt.jpg) no-repeat;
   background-position: 50%;
   background-size: cover;
   margin: 0 auto 1em; }
@@ -928,7 +928,7 @@ ul {
 
 /* line 629, C:/Users/junglemonk/Desktop/junglemonk.github.io/main.scss */
 .row__pic6 {
-  background: url(images/gallaryPhone.png) no-repeat;
+  background: url(images/optimized/gallaryPhone_317_opt.jpg) no-repeat;
   background-position: 50%;
   background-size: cover;
   margin: 0 auto 1em; }
