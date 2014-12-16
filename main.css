@@ -189,6 +189,12 @@ height:300px
 }
 }
 
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row_two {
+height:240px
+}
+}
+
 .row_two_top {
 width:284px;
 height:40px;
@@ -199,7 +205,7 @@ margin:40px auto
 @media only screen and (min-width: 240px) and (max-width: 300px) {
 .row_two_top {
 width:170px;
-margin:0 auto;
+margin:20px auto;
 background-size:contain
 }
 }
