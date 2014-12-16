@@ -53,7 +53,7 @@ border-bottom:1px dotted
 }
 
 b,strong {
-font-weight:bold
+font-weight:700
 }
 
 dfn {
@@ -169,7 +169,7 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 }
 
 fieldset {
-border:1px solid #c0c0c0;
+border:1px solid silver;
 margin:0 2px;
 padding:.35em .625em .75em
 }
@@ -184,7 +184,7 @@ overflow:auto
 }
 
 optgroup {
-font-weight:bold
+font-weight:700
 }
 
 table {
@@ -332,7 +332,7 @@ padding:21px 1px 15px
 }
 
 .basket_sum span {
-color:#999999;
+color:#999;
 font-size:1.1em
 }
 
@@ -367,7 +367,7 @@ position:relative
 }
 
 .row a {
-color:#ffffff;
+color:#fff;
 font-size:.875em
 }
 
@@ -380,6 +380,12 @@ background:url(images/optimized/Ellipse-Tablet980.jpg) no-repeat center center
 @media only screen and (min-width: 240px) and (max-width: 480px) {
 .row {
 background:url(images/optimized/Ellipse-Phone480.jpg) no-repeat center center
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.row {
+background:url(images/optimized/Ellipse-Phone300.jpg) no-repeat center center
 }
 }
 
@@ -744,7 +750,7 @@ min-width:180px
 
 .row_four {
 width:100%;
-background:#ffffff;
+background:#fff;
 margin-top:-4px;
 margin-bottom:53px;
 display:inline-block;
@@ -912,7 +918,7 @@ left:38.90641%
 
 .row_four__button a {
 text-align:center;
-color:#ffffff;
+color:#fff;
 font-size:.875em
 }
 
@@ -944,7 +950,7 @@ margin:0 auto
 .footer {
 width:100%;
 height:75px;
-background-color:#ffffff;
+background-color:#fff;
 position:relative;
 display:inline-block;
 font-size:.6em;
@@ -1108,6 +1114,6 @@ margin-bottom:10px
 .row_three__txt {
 width:33.25%;
 display:inline-block;
-color:#ffffff;
+color:#fff;
 font-size:.875em
 }
