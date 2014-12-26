@@ -1,0 +1,610 @@
+@import 'normalize';
+@import 'gridgallery';
+
+$phones: 240px;
+$mobile: 300px;
+$small: 480px;
+$medium-screens: 768px;
+$normal: 980px;
+
+@mixin respond-to($media) {
+    @if $media == crappy{
+    @media only screen and (min-width: $phones) and (max-width: $mobile){ @content; }
+  }
+  @if $media == handhelds {
+    @media only screen and (min-width: $phones) and (max-width: $small) { @content; } 
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $small + 1) and (max-width: $medium-screens) { @content; }
+  }
+    @else if $media == normal {
+    @media only screen and (min-width: $phones) and  (max-width: $normal - 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $normal) { @content; }
+  }
+}
+/*FlexEmbed*/
+.FlexEmbed {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.FlexEmbed:before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+.FlexEmbed--2by1:before {
+  padding-bottom: 100%;
+}
+.FlexEmbed--1by1:before {
+  padding-bottom: 50%;
+}
+
+/*FlexEmbed*/
+
+.nav_row {
+    width: 100%;
+    min-height: 91px;
+    display: inline-block;
+    position: relative;
+    background: url(images/nav_row.png);
+    
+    button:hover {
+        background-color: #b9360d;
+    }
+    
+    @include respond-to(normal) {
+        height: 150px;
+    }
+    @include respond-to(handhelds) {
+        height: 350px;
+    }
+    @include respond-to(crappy) {
+        height: 500px;
+    }
+}
+
+.row_stud {
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+    
+    
+    @include respond-to(crappy){
+        font-size: 0.6em;
+        width: 100%;
+    }
+    @include respond-to(handhelds) {
+        font-size: 0.7em;
+    }
+    @include respond-to(normal){
+        width: 100%;
+    }
+}
+
+.row_stud_butt {
+    background-color: #ff4911;
+    height: 31px;
+    border: none;
+    position: absolute;
+    left: 315px;
+    box-shadow: 0 2px #b9360d;
+    padding: 9px 10px 9px 10px;
+    font-size: .875em;
+    
+    a {
+        color: #ffffff;
+    }
+    
+    
+    @include respond-to(crappy){
+        position: static;
+        float: left;
+    }
+    @include respond-to(normal) {
+        position: static;
+        float: left;
+    }
+}
+
+.row_button_left {
+    height: 31px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background-color: #ff4911;
+    border: 0px;
+    box-shadow: 0 2px #b9360d;
+    padding: 9px 10px 9px 10px;
+    font-size: .875em;
+    
+        a {
+            color: #ffffff;
+        }
+    
+    @include respond-to(crappy){
+        font-size: 0.6em;
+    }
+    @include respond-to(handhelds) {
+        font-size: 0.7em;
+    }
+}
+
+.menu_gallery {
+    width: 100%;
+    height: 40px;
+    margin: 40px auto;
+    text-align: center;
+    line-height: 3em;
+    font-size: .75em;
+    
+    a {
+        margin: 12px 0;
+        display: block; 
+        padding: 0 10px;
+        position: relative;
+        &:hover {
+            color: #fff;
+            background: #a12157;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            margin-left: -18px;
+            width: 36px;
+            height: 10px;
+            bottom: -10px;
+            background: url(images/hover.png) no-repeat;
+            display: none;
+        }
+        &.menu_gallery_active {
+            &:before {
+                display: block;
+            }
+        }
+        @include respond-to(handhelds) {
+            padding: 0;
+        }
+    }
+    
+    @include respond-to(normal) {
+        width: 75%;
+    }
+    @include respond-to(medium-screens) {
+        width: 100%;
+    }
+    @include respond-to(handhelds) {
+        width: 90%;
+    }
+    @include respond-to(crappy) {
+         width: 50%;
+         margin: 60px auto;
+     }
+}
+
+
+
+
+
+
+
+.menu_gallery_active {
+    color: #fff;
+    background-color: #a12157;
+    
+    
+    background-size: contain;
+    position: relative;
+    &:before {
+        display: block;
+    }
+}
+
+.menu_gallery_link {
+        color: inherit;
+}
+
+.nav_row__gallery {
+    
+    @include respond-to(handhelds) {
+        width: 100%;
+    }
+    li {
+        list-style-type: none;
+        display: inline-block;
+        color: #a12157;
+        
+        
+        @include respond-to(handhelds) {
+            width: 45%;
+    }
+        @include respond-to(crappy) {
+            display: block;
+            width: 100%;
+    }
+        
+        
+    }
+    li:last-of-type {
+        color: #31a192;
+        margin: 0;
+    }
+}
+
+.row_two {
+    width: 100%;
+    display: inline-block;
+    background: #ffffff;
+}
+.row__picgallery {
+    width: 980px;
+    height: 100%;
+    margin: auto;
+    line-height: 15px;
+    font-size: 0.75em; /*12px / 16px*/
+    
+    @include respond-to(normal) {
+        width: 100%;
+    }
+    
+    span {
+         white-space: pre-line;
+         font-size: 1.166666666666667em; /*14px / 12px*/
+         
+         @include respond-to(medium-screens) {
+                font-size: 0.8em
+            }
+     }
+    
+     b {
+         color: #333030;
+         font-size: .8em        
+     }
+}
+.row__picgallery_colunm {
+    @include column(1);
+    margin: 40px 20px 0 20px ;
+    
+    a {
+        color:#229cd4
+    }
+    a:hover {
+        color: #ff4911;
+    }
+    
+    @include respond-to(normal) {
+        width: 31.3333333333%;
+        margin: 1%;
+    }
+    @include respond-to(handhelds) {
+        width: 48%;
+        min-width: 125px;
+        font-size: 0.7em;   
+    }
+    @include respond-to(crappy) {
+        width: 98%;
+    }
+}
+
+
+
+
+.row__column_pic1 {
+    background: url(images/gallery/lacoste_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic2 {
+    background: url(images/gallery/crab_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic3 {
+    background: url(images/gallery/building_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic4 {
+    background: url(images/gallery/monsters_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic5 {
+        background: url(images/gallery/dude_205.png) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic6 {
+        background: url(images/gallery/ali_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic7 {
+        background: url(images/gallery/lincoln_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic8 {
+        background: url(images/gallery/bird_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic9 {
+        background: url(images/gallery/heart_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic10 {
+        background: url(images/gallery/octopus_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic11 {
+        background: url(images/gallery/duck_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic12 {
+        background: url(images/gallery/fuck_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic13 {
+        background: url(images/gallery/monsters_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic14 {
+        background: url(images/gallery/lacoste_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic15 {
+        background: url(images/gallery/building_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic16 {
+        background: url(images/gallery/crab_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic17 {
+        background: url(images/gallery/lincoln_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic18 {
+        background: url(images/gallery/bird_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic19 {
+        background: url(images/gallery/heart_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row__column_pic20 {
+        background: url(images/gallery/ali_205.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0 auto 1em;
+}
+
+.row_bottom {
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    display: inline-block;
+    background: url(images/nav_row.png);
+}
+
+.row_bottom_container {
+    width: 950px;
+    margin: 20px auto;
+    
+    @include respond-to(normal) {
+        width: 100%;
+    }
+}
+
+.row_botton__pages {
+    width: 156px;
+    float: right;
+    display: inline-block;
+    font-size: 11px;
+    
+    a {
+        padding: 5px;
+        background:#e4e3e3;
+    }
+}
+
+.page_number_active {
+    color: #a12157;
+}
+
+.page_number {
+    color: #999999;
+}
+
+/***FOOTER***/
+.footer {
+    width: 100%;
+    height: 75px;
+    background-color: #ffffff;
+    position: relative;
+    display: inline-block;
+    font-size: 0.6em;
+    line-height: 20px;
+    padding: 2% 0 3% 2%;
+    
+    @include respond-to(normal){
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.footer_txt {
+    float: left;
+    display: inline-block;
+    
+    @include respond-to(normal) {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        margin-left: -125px;
+        padding-top: 10px;
+    }
+    @include respond-to(handhelds) {
+        font-size: 0.8em;
+        margin-left: -100px;
+    }
+    @include respond-to(crappy) {
+        margin-left: -100px;
+    }
+}
+
+/***SOCIAL***/
+.footer_social {
+    width: 95px;
+    height: 33px;
+    margin: 0 0 0 7%; /*90px*/
+    float: left;
+    display: inline-block;
+    
+     @include respond-to(normal){
+        margin: 0;
+    }
+}
+
+.footer__fb {
+        float: left;
+        margin-right: 1px;
+        height: 33px;
+    
+    a {
+        width: 31px;
+        height: 33px;
+        background: url(images/fb.png) no-repeat;
+        display: inline-block;
+    }
+}
+
+.footer__tw {
+        margin-right: 1px;
+        float: left;
+        height: 33px;
+    a {
+        width: 31px;
+        height: 33px;
+        background: url(images/twi.png) no-repeat;
+        display: inline-block;
+    }
+}
+
+.footer__pi {  
+        height: 33px;
+    a {
+        width: 31px;
+        height: 33px;
+        background: url(images/ps.png) no-repeat;
+        display: inline-block;
+    }
+}
+/***SOCIAL***/
+
+.footer_logo {
+    width: 90px;
+    height: 25px;
+    top: 25px;
+    left: 50%;
+    margin-left: -45px;
+    position: absolute;
+    background: url(images/LOGO-footer.png);
+    
+    
+    @include respond-to(normal){
+        top: 90%;
+    }
+}
+
+.footer_contacts_ul {
+    
+    li {
+         display: inline-block;
+         text-align: right;
+         color: #333030;
+         padding-right: 15px;
+        
+        @include respond-to(normal) {
+            padding-right: 5px;
+    }
+        @include respond-to(handhelds){
+       display: block;
+    }
+        
+        span {
+            color: #ff4911;
+        }
+    }
+}
+
+.footer_contacts {
+    float: right;
+    display: inline-block;  
+    
+    @include respond-to(handhelds){
+       display: block;
+    }
+    @include respond-to(crappy) {
+        margin-bottom: 10px;
+    }
+}
+
+.row__picgallery_column {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}

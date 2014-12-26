@@ -95,10 +95,6 @@ text-transform:uppercase;
 color:red
 }
 
-b {
-color:#229cd4
-}
-
 ul {
 list-style:none;
 margin:0;
@@ -136,21 +132,24 @@ margin:0
 
 @media only screen and (min-width: 240px) and (max-width: 300px) {
 .logo {
-min-width:90px;
-height:50px;
-background:url(images/logo-phone.png) no-repeat center center;
-margin:0
+    min-width:90px;
+    height:50px;
+    background:url(images/logo-phone.png) no-repeat center center;
+    margin:0
 }
 }
 
 .menu {
-text-align:center;
-padding-top:36px
+    text-align:center;
+    padding-top:36px
 }
-
+.menu a:hover {
+    text-decoration: underline;
+}
+            
 @media only screen and (min-width: 240px) and (max-width: 480px) {
 .menu {
-padding:58px 0 0 3%
+    padding:58px 0 0 3%
 }
 }
 
@@ -210,7 +209,8 @@ display:none
 }
 
 .basket_sum b {
-font-size:1.55556em
+font-size:1.55556em;
+color:#229cd4
 }
 
 .basket_sum pre {
@@ -231,7 +231,9 @@ position:relative
 color:#ffffff;
 font-size:.875em
 }
-
+.row button:hover {
+    background-color: #b9360d;
+}
 @media only screen and (min-width: 240px) and (max-width: 979px) {
 .row {
 background:url(images/optimized/Ellipse-Tablet980.jpg) no-repeat center center
@@ -245,15 +247,17 @@ background:url(images/optimized/Ellipse-Phone480.jpg) no-repeat center center
 }
 
 .row_stud_butt {
-background-color:#ff4911;
-height:31px;
-border:none;
-position:absolute;
-left:315px;
-box-shadow:0 2px #b9360d;
-padding:9px 10px
+    background-color:#ff4911;
+    height:31px;
+    border:none;
+    position:absolute;
+    left:315px;
+    box-shadow:0 2px #b9360d;
+    padding:9px 10px;
 }
 
+
+            
 @media only screen and (min-width: 240px) and (max-width: 300px) {
 .row_stud_butt {
 position:static;
@@ -440,7 +444,7 @@ font-size:.7em
 
         </style>
         
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Press+Start+2P&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
 
@@ -460,7 +464,7 @@ font-size:.7em
                 </div>
                 
                 <nav class="menu">
-                    <a href="#" class="menu_item">Галарея</a>
+                    <a href="gallery.html" class="menu_item">Галeрея</a>
                     <a href="#" class="menu_item">Кольори</a>
                     <a href="#" class="menu_item">Інфо</a>
                 </nav>
@@ -516,37 +520,46 @@ font-size:.7em
             <div class="row_four">
                 <div class="row_four_gallary">
                     <div class="row__column">
-                        <div class="row__pic1 FlexEmbed FlexEmbed--2by1">
-                        </div>
-                        <span><b>Крокодил</b>
-                            60 грн</span>
+                        <a href="#">
+                        <img class="row__pic" src="css/images/optimized/gallaryLacoste_317_opt.jpg">
+                        <span>Крокодил
+                            <b>60 грн</b></span>
+                        </a>
                     </div>
                     <div class="row__column">
-                        <div class="row__pic2  FlexEmbed FlexEmbed--2by1">
-                        </div>
-                        <span><b>Захоплення міста</b>
-                            90 грн</span>
+                        <a href="#">
+                        <img class="row__pic" src="css/images/optimized/gallaryInvader_317_opt.jpg">
+                        <span>Захоплення міста
+                            <b>90 грн</b></span>
+                        </a>
                     </div>
                     <div class="row__column">
-                        <div class="row__pic3 FlexEmbed FlexEmbed--2by1">
-                        </div>
-                        <span><b>Мона Ліза</b>
-                            110 грн</span>
+                        <a href="#">
+                        <img class="row__pic" src="css/images/optimized/gallaryLiza_317_opt.jpg">
+                        <span>Мона Ліза
+                            <b>110 грн</b></span>
+                        </a>
                     </div>
                     <div class="row__column">
-                        <div class="row__pic4 FlexEmbed FlexEmbed--2by1"></div>
-                        <span><b>Монро</b>
-                            120 грн</span>
+                        <a href="#">
+                        <img class="row__pic" src="css/images/optimized/gallaryMonroe_317_opt.jpg">
+                        <span>Монро
+                            <b>120 грн</b></span>
+                        </a>
                     </div>
                     <div class="row__column">
-                        <div class="row__pic5 FlexEmbed FlexEmbed--2by1"></div>
-                        <span><b>Граната</b>
-                            90 грн</span>
+                        <a href="#">
+                        <img class="row__pic" src="css/images/optimized/gallaryGranate_317_opt.jpg">
+                        <span>Граната
+                            <b>90 грн</b></span>
+                        </a>
                     </div>
                     <div class="row__column">
-                        <div class="row__pic6 FlexEmbed FlexEmbed--2by1"></div>
-                        <span><b>Телефон</b>
-                            90 грн</span>
+                        <a href="#">
+                        <img class="row__pic" src="css/images/optimized/gallaryPhone_317_opt.jpg">
+                        <span>Телефон
+                            <b>90 грн</b></span>
+                        </a>
                     </div>
                 </div>
                 
