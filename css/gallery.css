@@ -400,7 +400,7 @@ body {
   height: 91px;
   display: inline-block;
   position: relative;
-  background: url(images/nav_row.png) no-repeat; }
+  background: url(images/nav_row.png); }
   /* line 54, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .nav_row button:hover {
     background-color: #b9360d; }
