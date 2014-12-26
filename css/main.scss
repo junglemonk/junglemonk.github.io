@@ -1,7 +1,6 @@
 @import 'grid';
 @import 'normalize';
 
-
 $phones: 240px;
 $mobile: 300px;
 $small: 480px;
@@ -31,26 +30,6 @@ $normal: 980px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/*FlexEmbed*/
-.FlexEmbed {
-  display: block;
-  overflow: hidden;
-  position: relative;
-}
-.FlexEmbed:before {
-  content: "";
-  display: block;
-  width: 100%;
-}
-.FlexEmbed--2by1:before {
-  padding-bottom: 100%;
-}
-.FlexEmbed--1by1:before {
-  padding-bottom: 50%;
-}
-
-/*FlexEmbed*/
 
 /*UNIVERSAL*/
 body {
@@ -117,7 +96,6 @@ ul {
     @include respond-to(crappy) {
         font-size: 0.8em;
     }
-    
 }
 
 .menu_item {
@@ -193,8 +171,6 @@ ul {
     }
 }
 
-
-
 .row_stud_butt {
     background-color: #ff4911;
     height: 31px;
@@ -245,7 +221,6 @@ ul {
     position: relative;
     margin: 0 auto;
     
-    
     @include respond-to(crappy){
         font-size: 0.6em;
         width: 100%;
@@ -257,7 +232,6 @@ ul {
         width: 100%;
     }
 }
-
 
 .row_botton {
     width: 960px;
@@ -325,7 +299,6 @@ ul {
         min-width: 120px; 
     }
 }
-
 
 .row_button_left {
     height: 31px;
@@ -400,7 +373,6 @@ ul {
     padding-top: 155px; /*20%*/
     background-size: contain;
     
-
     @include respond-to(normal) {
         width: 23.95833333333333%;
         left: 2%;
@@ -458,7 +430,6 @@ ul {
     @include respond-to(handhelds) {
         display: none;
     }
-   
 }
 
 .row_three_counter {
@@ -482,7 +453,6 @@ ul {
     background: url(images/counter.png) no-repeat;
     margin-left: 160px;
     float: left;
-//    padding: 25px 0 0 260px;
     background-position: 50%;
     background-size: contain;
     
@@ -501,9 +471,6 @@ ul {
     display: inline-block;
     padding: 1%;
 }
-
-
-
 
 .row__column {
     @include column(1);
@@ -551,101 +518,13 @@ ul {
         width: 100%;
         font-size: 0.7em;
     }
-    
-   
 }
 
-.row__pic1 { 
-    background: url(images/optimized/gallaryLacoste_317_opt.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-    
-     
-    @include respond-to(handhelds) {
-//        background: url(images/gallaryLacoste240.png);
-        background: url(images/optimized/gallaryLacoste240.jpg) no-repeat;
-        background-position: 50%;
-        background-size: cover;
-        margin: 0 auto 1em;
-    }
+.row__pic {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
 }
-
-.row__pic2 {
-    background: url(images/optimized/gallaryInvader_317_opt.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-    
-    @include respond-to(handhelds) {
-//        background: url(images/gallaryInveder240.png);
-        background: url(images/optimized/gallaryInveder240.jpg) no-repeat;
-        background-position: 50%;
-        background-size: cover;
-        margin: 0 auto 1em;
-    }
-}
-
-.row__pic3 {
-    background: url(images/optimized/gallaryLiza_317_opt.jpg)no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-    
-    @include respond-to(handhelds) {
-//        background: url(images/gallaryLiza240.png);
-        background: url(images/optimized/gallaryLiza240.jpg) no-repeat;
-        background-position: 50%;
-        background-size: cover;
-        margin: 0 auto 1em;
-    }
-}
-
-.row__pic4 {
-    background: url(images/optimized/gallaryMonroe_317_opt.jpg);
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-    
-    @include respond-to(handhelds) {
-//        background: url(images/gallaryMonroe240.png);
-        background: url(images/optimized/gallaryMonroe240.jpg) no-repeat;
-        background-position: 50%;
-        background-size: cover;
-        margin: 0 auto 1em;
-    }
-}
-
-.row__pic5 {
-    background: url(images/optimized/gallaryGranate_317_opt.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-    
-    @include respond-to(handhelds) {
-//        background: url(images/gallaryGranate240.png);
-        background: url(images/optimized/gallaryGranate240.png) no-repeat;
-        background-position: 50%;
-        background-size: cover;
-        margin: 0 auto 1em;
-    }
-}
-
-.row__pic6 {
-    background: url(images/optimized/gallaryPhone_317_opt.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-    
-    @include respond-to(handhelds) {
-//        background: url(images/gallaryPhone240.png);
-        background: url(images/optimized/gallaryPhone240.png) no-repeat;
-        background-position: 50%;
-        background-size: cover;
-        margin: 0 auto 1em;
-    }
-}
-
 .row_four__button {
     min-width: 100px;
     width: 23.1335436382755%; /*220px*/
@@ -781,14 +660,12 @@ ul {
     position: absolute;
     background: url(images/LOGO-footer.png);
     
-    
     @include respond-to(normal){
         top: 90%;
     }
 }
 
-.footer_contacts_ul {
-    
+.footer_contacts_ul { 
     li {
          display: inline-block;
          text-align: right;
@@ -827,8 +704,4 @@ ul {
     font-size: 0.875em; /*14px / 16px*/
 }
 
-.row__pic {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-}
+

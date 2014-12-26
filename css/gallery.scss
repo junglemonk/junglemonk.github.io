@@ -24,25 +24,6 @@ $normal: 980px;
     @media only screen and (min-width: $normal) { @content; }
   }
 }
-/*FlexEmbed*/
-.FlexEmbed {
-  display: block;
-  overflow: hidden;
-  position: relative;
-}
-.FlexEmbed:before {
-  content: "";
-  display: block;
-  width: 100%;
-}
-.FlexEmbed--2by1:before {
-  padding-bottom: 100%;
-}
-.FlexEmbed--1by1:before {
-  padding-bottom: 50%;
-}
-
-/*FlexEmbed*/
 
 .nav_row {
     width: 100%;
@@ -163,6 +144,10 @@ $normal: 980px;
         &.menu_gallery_active {
             &:before {
                 display: block;
+                
+                @include respond-to(handhelds) {
+                    display: none;
+                }
             }
         }
         @include respond-to(handhelds) {
@@ -184,12 +169,6 @@ $normal: 980px;
          margin: 60px auto;
      }
 }
-
-
-
-
-
-
 
 .menu_gallery_active {
     color: #fff;
@@ -220,14 +199,13 @@ $normal: 980px;
         
         @include respond-to(handhelds) {
             width: 45%;
-    }
+        }
         @include respond-to(crappy) {
             display: block;
             width: 100%;
+        }
     }
-        
-        
-    }
+    
     li:last-of-type {
         color: #31a192;
         margin: 0;
@@ -258,12 +236,12 @@ $normal: 980px;
                 font-size: 0.8em
             }
      }
-    
      b {
          color: #333030;
          font-size: .8em        
      }
 }
+
 .row__picgallery_colunm {
     @include column(1);
     margin: 40px 20px 0 20px ;
@@ -287,149 +265,6 @@ $normal: 980px;
     @include respond-to(crappy) {
         width: 98%;
     }
-}
-
-
-
-
-.row__column_pic1 {
-    background: url(images/gallery/lacoste_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic2 {
-    background: url(images/gallery/crab_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic3 {
-    background: url(images/gallery/building_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic4 {
-    background: url(images/gallery/monsters_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic5 {
-        background: url(images/gallery/dude_205.png) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic6 {
-        background: url(images/gallery/ali_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic7 {
-        background: url(images/gallery/lincoln_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic8 {
-        background: url(images/gallery/bird_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic9 {
-        background: url(images/gallery/heart_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic10 {
-        background: url(images/gallery/octopus_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic11 {
-        background: url(images/gallery/duck_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic12 {
-        background: url(images/gallery/fuck_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic13 {
-        background: url(images/gallery/monsters_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic14 {
-        background: url(images/gallery/lacoste_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic15 {
-        background: url(images/gallery/building_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic16 {
-        background: url(images/gallery/crab_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic17 {
-        background: url(images/gallery/lincoln_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic18 {
-        background: url(images/gallery/bird_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic19 {
-        background: url(images/gallery/heart_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
-}
-
-.row__column_pic20 {
-        background: url(images/gallery/ali_205.jpg) no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    margin: 0 auto 1em;
 }
 
 .row_bottom {
@@ -458,6 +293,9 @@ $normal: 980px;
     a {
         padding: 5px;
         background:#e4e3e3;
+        &:hover {
+            color: #a12157;
+        }
     }
 }
 
