@@ -52,20 +52,17 @@ $normal: 980px;
     position: relative;
     margin: 0 auto;
     
-    
     @include respond-to(crappy){
-        font-size: 0.6em;
         width: 100%;
     }
-    @include respond-to(handhelds) {
-        font-size: 0.7em;
-    }
+    
     @include respond-to(normal){
         width: 100%;
     }
 }
 
-.row_stud_butt {
+.row_stud_btn {
+    color: #fff;
     background-color: #ff4911;
     height: 31px;
     border: none;
@@ -75,14 +72,13 @@ $normal: 980px;
     padding: 9px 10px 9px 10px;
     font-size: .875em;
     
-    a {
-        color: #ffffff;
-    }
-    
-    
     @include respond-to(crappy){
+        font-size: 0.6em;
         position: static;
         float: left;
+    }
+    @include respond-to(handhelds) {
+        font-size: 0.7em;
     }
     @include respond-to(normal) {
         position: static;
@@ -90,7 +86,8 @@ $normal: 980px;
     }
 }
 
-.row_button_left {
+.row_left_btn {
+    color: #fff;
     height: 31px;
     position: absolute;
     right: 0px;
@@ -101,15 +98,14 @@ $normal: 980px;
     padding: 9px 10px 9px 10px;
     font-size: .875em;
     
-        a {
-            color: #ffffff;
-        }
-    
     @include respond-to(crappy){
         font-size: 0.6em;
     }
     @include respond-to(handhelds) {
         font-size: 0.7em;
+    }
+    &:hover {
+        background: #b9360d;
     }
 }
 
@@ -141,7 +137,7 @@ $normal: 980px;
             background: url(images/hover.png) no-repeat;
             display: none;
         }
-        &.menu_gallery_active {
+        &.menu_active {
             &:before {
                 display: block;
                 
@@ -170,20 +166,20 @@ $normal: 980px;
      }
 }
 
-.menu_gallery_active {
+
+
+.menu_gallery_link {
+        color: inherit;
+    
+    &.menu_active {
     color: #fff;
     background-color: #a12157;
-    
-    
     background-size: contain;
     position: relative;
     &:before {
         display: block;
     }
 }
-
-.menu_gallery_link {
-        color: inherit;
 }
 
 .nav_row__gallery {
@@ -244,7 +240,7 @@ $normal: 980px;
 
 .row__picgallery_colunm {
     @include column(1);
-    margin: 40px 20px 0 20px ;
+    margin: 40px 10px 0 20px ;
     
     a {
         color:#229cd4
@@ -445,4 +441,10 @@ $normal: 980px;
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
+}
+
+
+
+.menu_active {
+    
 }

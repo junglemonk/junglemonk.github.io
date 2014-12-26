@@ -9,7 +9,218 @@
 
         <meta name="sivac" content="Pic-a-Pix">
         
-        <style>body{width:100%;*zoom:1}body:before,body:after{content:"";display:table}body:after{clear:both}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;font-size:100%}header,nav{display:block}a{background-color:transparent}b{font-weight:700}pre{overflow:auto;font-family:monospace,monospace;font-size:1em}button{color:inherit;font:inherit;margin:0;overflow:visible;text-transform:none;-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner{border:0;padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{font-family:"Press Start 2P";font-weight:400;text-transform:uppercase}a{text-decoration:none;text-transform:uppercase}ul{list-style:none;margin:0;padding:0}.wrap{margin:auto;max-width:1500px;width:100%}.header{height:84px;position:relative}.logo{background:url(images/LOGO.png) no-repeat center center;display:inline-block;width:195px;background-size:contain;height:64.28571%;margin:10px 0 0 1.32013%;float:left}@media only screen and (min-width: 240px) and (max-width: 979px){.logo{width:20%;min-width:110px;margin:0}}@media only screen and (min-width: 240px) and (max-width: 300px){.logo{min-width:90px;height:50px;background:url(images/logo-phone.png) no-repeat center center;margin:0}}.menu{text-align:center;padding-top:36px}@media only screen and (min-width: 240px) and (max-width: 480px){.menu{padding:58px 0 0 3%}}@media only screen and (min-width: 240px) and (max-width: 300px){.menu{font-size:.8em}}.menu_item{margin-right:1.08475%;color:#332f2f;font-size:.75em}.menu_item:hover{text-decoration:underline}.menu_item_active{text-decoration:underline;margin-right:1.08475%;color:#332f2f;font-size:.75em}.basket{float:right;display:inline-block;background:#e4e3e3}.basket b{color:#229cd4}.basket_sum{color:#332f2f;text-align:right;font-size:.5625em;padding:21px 23px 15px 18px}@media only screen and (min-width: 240px) and (max-width: 480px){.basket_sum{padding:5% 0 0;font-size:.5em}}@media only screen and (min-width: 481px) and (max-width: 768px){.basket_sum{padding:21px 1px 15px}}.basket_sum span{color:#999;font-size:1.1em}@media only screen and (min-width: 240px) and (max-width: 480px){.basket_sum span{display:none}}@media only screen and (min-width: 481px) and (max-width: 768px){.basket_sum span{display:none}}.basket_sum b{font-size:1.55556em}.basket_sum pre{font-family:"Press Start 2P";margin:0 0 10px}</style>
+        <style>body {
+width:100%;
+*zoom:1
+}
+
+body:before,body:after {
+content:"";
+display:table
+}
+
+body:after {
+clear:both
+}
+
+html {
+-ms-text-size-adjust:100%;
+-webkit-text-size-adjust:100%
+}
+
+body {
+margin:0;
+font-size:100%
+}
+
+header,nav{
+display:block
+}
+
+a {
+background-color:transparent
+}
+
+b{
+font-weight:bold
+}
+
+pre {
+overflow:auto
+}
+pre{
+font-family:monospace,monospace;
+font-size:1em
+}
+
+button{
+color:inherit;
+font:inherit;
+margin:0
+}
+
+button {
+overflow:visible
+}
+
+button{
+text-transform:none
+}
+
+button{
+-webkit-appearance:button;
+cursor:pointer
+}
+
+button::-moz-focus-inner{
+border:0;
+padding:0
+}
+
+* {
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box
+}
+
+body {
+font-family:"Press Start 2P";
+font-weight:400;
+text-transform:uppercase
+}
+
+a {
+text-decoration:none;
+text-transform:uppercase;
+}
+
+ul {
+list-style:none;
+margin:0;
+padding:0
+}
+
+.wrap {
+margin:auto;
+max-width:1500px;
+width:100%
+}
+
+.header {
+height:84px;
+position:relative
+}
+
+.logo {
+background:url(images/LOGO.png) no-repeat center center;
+display:inline-block;
+width:195px;
+background-size:contain;
+height:64.28571%;
+margin:10px 0 0 1.32013%;
+float:left
+}
+
+@media only screen and (min-width: 240px) and (max-width: 979px) {
+.logo {
+width:20%;
+min-width:110px;
+margin:0
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.logo {
+min-width:90px;
+height:50px;
+background:url(images/logo-phone.png) no-repeat center center;
+margin:0
+}
+}
+
+.menu {
+text-align:center;
+padding-top:36px
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.menu {
+padding:58px 0 0 3%
+}
+}
+
+@media only screen and (min-width: 240px) and (max-width: 300px) {
+.menu {
+font-size:.8em
+}
+}
+
+.menu_item {
+margin-right:1.08475%;
+color:#332f2f;
+font-size:.75em
+}
+.menu_item:hover {
+text-decoration: underline;
+}
+.active {
+    text-decoration: underline;
+}
+
+.basket {
+float:right;
+display:inline-block;
+background:#e4e3e3
+}
+.basket b {
+color:#229cd4
+}
+.basket_sum {
+color:#332f2f;
+text-align:right;
+font-size:.5625em;
+padding:21px 23px 15px 18px
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.basket_sum {
+padding:5% 0 0;
+font-size:.5em
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+.basket_sum {
+padding:21px 1px 15px
+}
+}
+
+.basket_sum span {
+color:#999999;
+font-size:1.1em
+}
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.basket_sum span {
+display:none
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+.basket_sum span {
+display:none
+}
+}
+
+.basket_sum b {
+font-size:1.55556em
+}
+
+.basket_sum pre {
+font-family:"Press Start 2P";
+margin:0 0 10px
+}
+        </style>
         
         <link rel="stylesheet" href="css/gallery.css">
         <link href='http://fonts.googleapis.com/css?family=Press+Start+2P&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -33,7 +244,7 @@
                 </div>
                 
                 <nav class="menu">
-                    <a href="#" class="menu_item_active">Галeрея</a>
+                    <a href="#" class="menu_item active">Галeрея</a>
                     <a href="#" class="menu_item">Кольори</a>
                     <a href="#" class="menu_item">Інфо</a>
                 </nav> 
@@ -43,18 +254,13 @@
             <div class="nav_row">
                 
                 <div class="row_stud">
-                    <button class="row_stud_butt">
-                        <a href="#">Студія</a>
-                    </button>
+                        <a class="row_stud_btn" href="#">Студія</a>
                 </div>
-                
-                <button class="row_button_left">
-                    <a href="#">Замовити</a>
-                </button>
+                    <a class="row_left_btn" href="#">Замовити</a>
                 
                 <nav class="menu_gallery">
                     <ul class="nav_row__gallery">
-                        <li><a href="#" class="menu_gallery_active">Все</a></li>
+                        <li><a href="#" class="menu_gallery_link menu_active">Все</a></li>
                         <li><a href="#" class="menu_gallery_link">Істоти</a></li>
                         <li><a href="#" class="menu_gallery_link">Об'єкти</a></li>
                         <li><a href="#" class="menu_gallery_link">Їжа</a></li>
@@ -75,159 +281,161 @@
                                 <span>Крокодил
                                 <b>90 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/crab_205.jpg">
                                 <span>Краб
                                 <b>90 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/building_205.jpg">
                                 <span>Будівля
                                 <b>160 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/monsters_205.jpg">
                                 <span>Монстри
                                 <b>140 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/dude_205.png">
                                 <span>Смішний чувак
                                 <b>60 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/ali_205.jpg">
                                 <span>Мухамед Алі
                                 <b>160 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/lincoln_205.jpg">
                                 <span>Лінкольн
                                 <b>60 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/bird_205.jpg">
                                 <span>Какаюча ворона
                                 <b>200 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/heart_205.jpg">
                                 <span>Серце
                                 <b>30 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/octopus_205.jpg">
                                 <span>Восьминіг
                                 <b>180 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/duck_205.jpg">
                                 <span>Качка
                                 <b>60 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/fuck_205.jpg">
                                 <span>Фак
                                 <b>20 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/monsters_205.jpg">
                                 <span>Монстри
                                 <b>140 грн</b></span>
                         </a>
-                    </div>
-                    <div class="row__picgallery_colunm">
+                    </div><!--
+
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/lacoste_205.jpg">
                                 <span>Крокодил
                                 <b>60 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                     --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/building_205.jpg">
                                 <span>Будівля
                                 <b>160 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/crab_205.jpg">
                                 <span>Краб
                                 <b>90 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/lincoln_205.jpg">
                             <span>Лігкольн
                         <b>60 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/bird_205.jpg">
                                 <span>Какаюча ворона
                                 <b>200 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/heart_205.jpg">
                                 <span>Серце
                                 <b>30 грн</b></span>
                         </a>
-                    </div>
+                    </div><!--
                     
-                    <div class="row__picgallery_colunm">
+                    --><div class="row__picgallery_colunm">
                         <a href="#">
                             <img class="row__picgallery_column" src="css/images/gallery/ali_205.jpg">
                                 <span>Мухамед Алі
                                 <b>180 грн</b></span>
                         </a>
-                    </div>
-                </div>
+                    </div><!--
+
+                --></div>
             </div>
             
             <div class="row_bottom">
