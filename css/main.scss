@@ -155,8 +155,7 @@ ul {
     position: relative;  
     
     a {
-        color: #ffffff;
-        font-size: 0.875em; /*14px / 16px*/
+        
     }
     @include respond-to(normal) {
         background: url(images/optimized/Ellipse-Tablet980.jpg) no-repeat center center;
