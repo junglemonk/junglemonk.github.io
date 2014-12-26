@@ -415,6 +415,9 @@ body {
   box-shadow: 0 2px #b9360d;
   padding: 9px 10px 9px 10px;
   font-size: 0.875em; }
+  /* line 74, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  .row_stud_btn:hover {
+    background: #b9360d; }
   @media only screen and (min-width: 240px) and (max-width: 300px) {
     .row_stud_btn {
       font-size: 0.6em;
@@ -428,7 +431,7 @@ body {
       position: static;
       float: left; } }
 
-/* line 89, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 92, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .row_left_btn {
   color: #fff;
   height: 31px;
@@ -440,17 +443,17 @@ body {
   box-shadow: 0 2px #b9360d;
   padding: 9px 10px 9px 10px;
   font-size: 0.875em; }
+  /* line 103, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  .row_left_btn:hover {
+    background: #b9360d; }
   @media only screen and (min-width: 240px) and (max-width: 300px) {
     .row_left_btn {
       font-size: 0.6em; } }
   @media only screen and (min-width: 240px) and (max-width: 480px) {
     .row_left_btn {
       font-size: 0.7em; } }
-  /* line 107, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
-  .row_left_btn:hover {
-    background: #b9360d; }
 
-/* line 112, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 116, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .menu_gallery {
   width: 100%;
   height: 40px;
@@ -458,17 +461,17 @@ body {
   text-align: center;
   line-height: 3em;
   font-size: 0.75em; }
-  /* line 120, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 124, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .menu_gallery a {
     margin: 12px 0;
     display: block;
     padding: 0 10px;
     position: relative; }
-    /* line 125, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+    /* line 129, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
     .menu_gallery a:hover {
       color: #fff;
       background: #a12157; }
-    /* line 129, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+    /* line 133, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
     .menu_gallery a:before {
       content: "";
       position: absolute;
@@ -479,7 +482,7 @@ body {
       bottom: -10px;
       background: url(images/hover.png) no-repeat;
       display: none; }
-    /* line 141, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+    /* line 145, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
     .menu_gallery a.menu_active:before {
       display: block; }
       @media only screen and (min-width: 240px) and (max-width: 480px) {
@@ -502,23 +505,23 @@ body {
       width: 50%;
       margin: 60px auto; } }
 
-/* line 171, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 175, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .menu_gallery_link {
   color: inherit; }
-  /* line 174, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 178, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .menu_gallery_link.menu_active {
     color: #fff;
     background-color: #a12157;
     background-size: contain;
     position: relative; }
-    /* line 179, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+    /* line 183, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
     .menu_gallery_link.menu_active:before {
       display: block; }
 
 @media only screen and (min-width: 240px) and (max-width: 480px) {
   .nav_row__gallery {
     width: 100%; } }
-/* line 190, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 194, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .nav_row__gallery li {
   list-style-type: none;
   display: inline-block;
@@ -530,18 +533,18 @@ body {
     .nav_row__gallery li {
       display: block;
       width: 100%; } }
-/* line 205, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 209, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .nav_row__gallery li:last-of-type {
   color: #31a192;
   margin: 0; }
 
-/* line 211, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 215, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .row_two {
   width: 100%;
   display: inline-block;
   background: #ffffff; }
 
-/* line 216, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 220, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .row__picgallery {
   width: 980px;
   height: 100%;
@@ -552,7 +555,7 @@ body {
   @media only screen and (min-width: 240px) and (max-width: 979px) {
     .row__picgallery {
       width: 100%; } }
-  /* line 227, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 231, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .row__picgallery span {
     white-space: pre-line;
     font-size: 1.16667em;
@@ -560,21 +563,21 @@ body {
     @media only screen and (min-width: 481px) and (max-width: 768px) {
       .row__picgallery span {
         font-size: 0.8em; } }
-  /* line 235, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 239, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .row__picgallery b {
     color: #333030;
     font-size: 0.8em; }
 
-/* line 241, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 245, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .row__picgallery_colunm {
   display: inline-block;
   width: 205px;
   margin: 0 0;
   margin: 40px 10px 0 20px; }
-  /* line 245, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 249, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .row__picgallery_colunm a {
     color: #229cd4; }
-  /* line 248, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 252, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .row__picgallery_colunm a:hover {
     color: #ff4911; }
   @media only screen and (min-width: 240px) and (max-width: 979px) {
@@ -590,7 +593,7 @@ body {
     .row__picgallery_colunm {
       width: 98%; } }
 
-/* line 266, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 270, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .row_bottom {
   width: 100%;
   height: 50px;
@@ -598,7 +601,7 @@ body {
   display: inline-block;
   background: url(images/nav_row.png); }
 
-/* line 274, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 278, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .row_bottom_container {
   width: 950px;
   margin: 20px auto; }
@@ -606,30 +609,30 @@ body {
     .row_bottom_container {
       width: 100%; } }
 
-/* line 283, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 287, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .row_botton__pages {
   width: 156px;
   float: right;
   display: inline-block;
   font-size: 11px; }
-  /* line 289, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 293, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .row_botton__pages a {
     padding: 5px;
     background: #e4e3e3; }
-    /* line 292, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+    /* line 296, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
     .row_botton__pages a:hover {
       color: #a12157; }
 
-/* line 298, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 302, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .page_number_active {
   color: #a12157; }
 
-/* line 302, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 306, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .page_number {
   color: #999999; }
 
 /***FOOTER***/
-/* line 307, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 311, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .footer {
   width: 100%;
   height: 75px;
@@ -644,7 +647,7 @@ body {
       width: 100%;
       height: 100%; } }
 
-/* line 323, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 327, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .footer_txt {
   float: left;
   display: inline-block; }
@@ -664,7 +667,7 @@ body {
       margin-left: -100px; } }
 
 /***SOCIAL***/
-/* line 344, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 348, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .footer_social {
   width: 95px;
   height: 33px;
@@ -676,34 +679,34 @@ body {
     .footer_social {
       margin: 0; } }
 
-/* line 356, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 360, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .footer__fb {
   float: left;
   margin-right: 1px;
   height: 33px; }
-  /* line 361, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 365, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .footer__fb a {
     width: 31px;
     height: 33px;
     background: url(images/fb.png) no-repeat;
     display: inline-block; }
 
-/* line 369, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 373, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .footer__tw {
   margin-right: 1px;
   float: left;
   height: 33px; }
-  /* line 373, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 377, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .footer__tw a {
     width: 31px;
     height: 33px;
     background: url(images/twi.png) no-repeat;
     display: inline-block; }
 
-/* line 381, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 385, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .footer__pi {
   height: 33px; }
-  /* line 383, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 387, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .footer__pi a {
     width: 31px;
     height: 33px;
@@ -711,7 +714,7 @@ body {
     display: inline-block; }
 
 /***SOCIAL***/
-/* line 392, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 396, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .footer_logo {
   width: 90px;
   height: 25px;
@@ -724,7 +727,7 @@ body {
     .footer_logo {
       top: 90%; } }
 
-/* line 409, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 413, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .footer_contacts_ul li {
   display: inline-block;
   text-align: right;
@@ -736,11 +739,11 @@ body {
   @media only screen and (min-width: 240px) and (max-width: 480px) {
     .footer_contacts_ul li {
       display: block; } }
-  /* line 422, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+  /* line 426, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
   .footer_contacts_ul li span {
     color: #ff4911; }
 
-/* line 428, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 432, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .footer_contacts {
   float: right;
   display: inline-block; }
@@ -751,7 +754,7 @@ body {
     .footer_contacts {
       margin-bottom: 10px; } }
 
-/* line 440, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
+/* line 444, C:/Users/junglemonk/Desktop/junglemonk.github.io/css/gallery.scss */
 .row__picgallery_column {
   width: 100%;
   height: 100%;

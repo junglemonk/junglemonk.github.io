@@ -71,6 +71,9 @@ $normal: 980px;
     box-shadow: 0 2px #b9360d;
     padding: 9px 10px 9px 10px;
     font-size: .875em;
+    &:hover {
+        background: #b9360d;
+    }
     
     @include respond-to(crappy){
         font-size: 0.6em;
@@ -97,6 +100,9 @@ $normal: 980px;
     box-shadow: 0 2px #b9360d;
     padding: 9px 10px 9px 10px;
     font-size: .875em;
+    &:hover {
+        background: #b9360d;
+    }
     
     @include respond-to(crappy){
         font-size: 0.6em;
@@ -104,9 +110,7 @@ $normal: 980px;
     @include respond-to(handhelds) {
         font-size: 0.7em;
     }
-    &:hover {
-        background: #b9360d;
-    }
+    
 }
 
 .menu_gallery {
