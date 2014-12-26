@@ -170,24 +170,7 @@ ul {
     }
 }
 
-.row_stud_butt {
-    background-color: #ff4911;
-    height: 31px;
-    border: none;
-    position: absolute;
-    left: 315px;
-    box-shadow: 0 2px #b9360d;
-    padding: 9px 10px 9px 10px;
-    
-    @include respond-to(crappy){
-        position: static;
-        float: left;
-    }
-    @include respond-to(normal) {
-        position: static;
-        float: left;
-    }
-}
+
 
 .row_stud_make {
     width: 213px;
