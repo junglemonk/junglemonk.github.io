@@ -32,10 +32,6 @@ $normal: 980px;
     position: relative;
     background: url(images/nav_row.png);
     
-    button:hover {
-        background-color: #b9360d;
-    }
-    
     @include respond-to(normal) {
         height: 150px;
     }
@@ -211,7 +207,7 @@ $normal: 980px;
         margin: 0;
     }
 }
-
+///////////////////////////
 .row_two {
     width: 100%;
     display: inline-block;
@@ -445,10 +441,4 @@ $normal: 980px;
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
-}
-
-
-
-.menu_active {
-    
 }

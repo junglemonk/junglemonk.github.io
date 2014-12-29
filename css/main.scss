@@ -30,278 +30,25 @@ $normal: 980px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/*UNIVERSAL*/
-body {
-    font-family: "Press Start 2P";
-    font-weight: 400;
-    text-transform: uppercase;
+/*FlexEmbed*/
+.FlexEmbed {
+  display: block;
+  overflow: hidden;
+  position: relative;
 }
-a { 
-    text-decoration: none;
-    text-transform: uppercase;
+.FlexEmbed:before {
+  content: "";
+  display: block;
+  width: 100%;
 }
-
-b {
-    color: #229cd4;
+.FlexEmbed--2by1:before {
+  padding-bottom: 100%;
 }
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-/*UNIVERSAL*/
-.wrap {
-    margin: auto;
-    width: 100%;
+.FlexEmbed--1by1:before {
+  padding-bottom: 50%;
 }
 
-.header {
-    height: 84px;
-    position: relative;
-}
-
-.logo {
-    background: url(images/LOGO.png) no-repeat center center;
-    display: inline-block;
-    width: 195px;/*10.72607260726073%*/
-    background-size: contain;
-    height: 64.28571428571429%; /*54px / 84px*/
-    margin: 10px  0 0 1.32013201320132% ; /*24px / 1818px*/
-    float: left;
-    
-    @include respond-to(normal) {
-         width: 20%;
-         min-width: 110px;
-         margin: 0;
-     }
-    @include respond-to(crappy) {
-        min-width: 90px;
-        height: 50px;
-        background: url(images/logo-phone.png) no-repeat center center;
-        margin: 0;
-    }
-}
-
-.menu {
-    text-align: center;
-    padding-top: 36px;
-    
-     @include respond-to(handhelds) {
-        padding: 58px 0 0 3%;
-    }
-    
-    @include respond-to(crappy) {
-        font-size: 0.8em;
-    }
-}
-
-.menu_item {
-    margin-right: 1.08474576271186%;
-    color: #332f2f;
-    font-size: 0.75em; /*14px / 16px*/
-}
-
-.basket {
-    float: right;
-    display:inline-block;
-    background: #e4e3e3;
-}
-
-.basket_sum {
-            color: #332f2f;
-            text-align: right;
-            font-size: 0.5625em; /*9px / 16px*/
-            padding: 21px 23px 15px 18px;
-    
-     @include respond-to(handhelds) {
-         padding: 5% 0 0 0;
-         font-size: 0.5em;
-     }
-     @include respond-to(medium-screens){
-        padding: 21px 1px 15px 1px;
-     }
-    
-        span {
-            color: #999999;
-            font-size: 1.1em;
-                
-                @include respond-to(handhelds) {
-                    display: none;
-                }
-            
-                @include respond-to(medium-screens) {
-                    display: none;
-                } 
-            }
-          
-            b {
-                font-size: 1.555555555555556em; /*14px / 9px*/
-          }
-        pre {
-            font-family: "Press Start 2P";
-            margin: 0 0 10px 0;
-        }
-}
-
-/***ROW***/
-.row {
-    background: url(images/optimized/Ellipse-3-copy.jpg) no-repeat center center;
-    display: inline-block;
-    height: 440px;
-    width: 100%;
-    background-size: cover;
-    position: relative;  
-    
-    a {
-        
-    }
-    @include respond-to(normal) {
-        background: url(images/optimized/Ellipse-Tablet980.jpg) no-repeat center center;
-    }
-    
-    @include respond-to(handhelds) {
-         background: url(images/optimized/Ellipse-Phone480.jpg) no-repeat center center;
-    }
-    @include respond-to(crappy) {
-        background: url(images/optimized/Ellipse-Phone300.jpg) no-repeat center center;
-    }
-}
-
-
-
-.row_stud_make {
-    width: 213px;
-    height: 48px;
-    background: url(images/MergedLayers.png) no-repeat;
-    float: right;
-    position: absolute;
-    left: 500px;
-    top: 60px;
-    background-size: contain;
-    
-    
-    @include respond-to(crappy){
-        position: static;
-        float: left;
-        margin: 40px 0 0 -53px;
-        width: 60.375%;
-    }
-    @include respond-to(normal) {
-        position: static;
-        float: left;
-        margin-top: 40px;
-        width: 60.375%;
-    }
-}
-
-.row_stud {
-    width: 960px;
-    height: 91px;
-    position: relative;
-    margin: 0 auto;
-    
-    @include respond-to(crappy){
-        font-size: 0.6em;
-        width: 100%;
-    }
-    @include respond-to(handhelds) {
-        font-size: 0.7em;
-    }
-    @include respond-to(normal){
-        width: 100%;
-    }
-}
-
-.row_botton {
-    width: 960px;
-    height: 140px;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 170px;
-    
-    @include respond-to(crappy){
-        width: 100%;
-    }
-     @include respond-to(normal) {
-        width: 100%;
-    }
-}
-
-.row_botton_make {
-    width: 185px;
-    height: 138px;
-    background: url(images/advtime.png) no-repeat;
-    background-size: cover;
-    display: inline-block;
-    position: absolute;
-    left: 295px;
-    background-size: contain;
-    
-    
-     @include respond-to(normal) {
-        position: static;
-        float: left;
-    }
-    @include respond-to(handhelds) {
-        margin-top: 30px;
-        min-width: 132px;
-        width: 30.54166666666667%;
-    }
-    @include respond-to(crappy){
-        margin-top: 58px;
-        min-width: 90px;
-    }
-}
-
-.row_botton_txt {
-    width: 195px;
-    height: 110px;
-    background: url(images/MergedLayersBottom.png) no-repeat;
-    display: inline-block;
-    position: absolute;
-    left: 70px;
-    background-size: contain;
-
-     @include respond-to(normal) {
-        position: static;
-        float: left;
-         margin: 1%;
-         width: 30.375%;
-         min-width: 160px;
-    }
-     @include respond-to(handhelds) {
-        min-width: 140px;
-        width: 44.375%;
-        margin: 0;
-    }
-    @include respond-to(crappy){
-        min-width: 120px; 
-    }
-}
-
-.row_button_left {
-    height: 31px;
-    position: absolute;
-    right: 0px;
-    top: 0;
-    background-color: #ff4911;
-    border: 0px;
-    box-shadow: 0 2px #b9360d;
-    padding: 9px 10px 9px 10px;
-    
-        a {
-            font-size: 0.875em;  /*14px / 16px*/
-        }
-    
-    @include respond-to(crappy){
-        font-size: 0.6em;
-    }
-    @include respond-to(handhelds) {
-        font-size: 0.7em;
-    }
-}
+/*FlexEmbed*/
 /***ROW_TWO***/
 .row_two {
     background: url(images/backgrounds.jpg) center center;
@@ -369,7 +116,6 @@ ul {
     left: 356px;
     padding-top: 155px;
     background-size: contain;
-    
     
      @include respond-to(normal) {
         width: 18.75%;
@@ -442,7 +188,12 @@ ul {
         min-width: 180px;
     }
 }
-
+.row_three__txt {
+    width: 33.25%; /*300px*/
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.875em; /*14px / 16px*/
+}
 /***ROW_FOUR***/
 .row_four {
     width: 100%;
@@ -456,22 +207,24 @@ ul {
 .row__column {
     @include column(1);
     min-width: 150px;
+    height: 100%;
     
     @include respond-to(handhelds) {
         width: 50%;
         min-width: 150px;
-        font-size: 0.7em;   
+//        font-size: 0.7em;   
     }
     @include respond-to(crappy) {
         width: 100%;
     }
      
     span {
+         float: left;
          white-space: pre-line;
          font-size: 1.166666666666667em; /*14px / 12px*/
          
          @include respond-to(medium-screens) {
-                font-size: 0.8em
+//                font-size: 0.8em
             }
      }
     a {
@@ -506,24 +259,23 @@ ul {
     height: 100%;
     margin-bottom: 10px;
 }
-.row_four__button {
-    min-width: 100px;
-    width: 23.1335436382755%; /*220px*/
+.row_four__btn {
+//    min-width: 100px;
+    width: 220px; /*23.1335436382755%; /*220px*/
     height: 31px;
     background-color: #ff4911;
     box-shadow: 0 2px #b9360d;
     border: 0;
     position: absolute;
-    left: 38.90641430073607%; /*370px*/
-    
-    a {
-        text-align: center;
-        color: #ffffff;
-        font-size: 0.875em; /*14px / 16px*/
-    }
+    left: 50%; /*38.90641430073607%; /*370px*/
+    margin-left: -110px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.875em; /*14px / 16px*/
+    padding-top: 10px;
 }
 
-.row_four_center_button {
+.row_four_center_btn{
     width: 100%; /*960px*/
     position: relative;
     margin: 0 auto;
@@ -677,12 +429,3 @@ ul {
         margin-bottom: 10px;
     }
 }
-
-.row_three__txt {
-    width: 33.25%; /*300px*/
-    display: inline-block;
-    color: #ffffff;
-    font-size: 0.875em; /*14px / 16px*/
-}
-
-
